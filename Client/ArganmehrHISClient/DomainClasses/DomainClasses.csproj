@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72B9849F-931A-40C0-B11E-44324CD46250}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DomainClasses</RootNamespace>
+    <AssemblyName>DomainClasses</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Filters">
+      <HintPath>..\..\packages\EntityFramework.Filters.0.3.0.0\lib\net40\EntityFramework.Filters.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Configurations\Common\UserRatingConfig.cs" />
+    <Compile Include="Configurations\Users\ActivityLogConfig.cs" />
+    <Compile Include="Configurations\Users\ActivityLogTypeConfig.cs" />
+    <Compile Include="Configurations\Users\RoleAccessConfig.cs" />
+    <Compile Include="Configurations\Users\RoleConfig.cs" />
+    <Compile Include="Configurations\Cms\SettingConfig.cs" />
+    <Compile Include="Configurations\Users\UserClaimConfig.cs" />
+    <Compile Include="Configurations\Users\UserConfig.cs" />
+    <Compile Include="Configurations\Users\UserLoginConfig.cs" />
+    <Compile Include="Configurations\Users\UserRoleConfig.cs" />
+    <Compile Include="Configurations\ISettings.cs" />
+    <Compile Include="Configurations\ISettingServices.cs" />
+    <Compile Include="EF.Filters\RoleFilters.cs" />
+    <Compile Include="EF.Filters\UserFilters.cs" />
+    <Compile Include="Entities\AM\CentralAdmin.cs" />
+    <Compile Include="Entities\AM\CountryDivition.cs" />
+    <Compile Include="Entities\AM\EmployeeProfile.cs" />
+    <Compile Include="Entities\AM\Extentions\CentralAdminExtensions.cs" />
+    <Compile Include="Entities\AM\Institution.cs" />
+    <Compile Include="Entities\Catalog\CatalogSettings.cs" />
+    <Compile Include="Entities\Common\RatingSectionType.cs" />
+    <Compile Include="Entities\Common\UserRating.cs" />
+    <Compile Include="Entities\DataExchange\ImportEnums.cs" />
+    <Compile Include="Entities\Directory\Country.cs" />
+    <Compile Include="Entities\Directory\StateProvince.cs" />
+    <Compile Include="Entities\Localization\ILocalizedEntity.cs" />
+    <Compile Include="Entities\Localization\Language.cs" />
+    <Compile Include="Entities\Localization\LocaleStringResource.cs" />
+    <Compile Include="Entities\Localization\LocalizedProperty.cs" />
+    <Compile Include="Entities\Logg\ILogger.cs" />
+    <Compile Include="Entities\Logg\Log.cs" />
+    <Compile Include="Entities\Logg\LogContext.cs" />
+    <Compile Include="Entities\Logg\LoggingExtensions.cs" />
+    <Compile Include="Entities\Logg\LogLevel.cs" />
+    <Compile Include="Entities\SEO\CanonicalHostNameRule.cs" />
+    <Compile Include="Entities\SEO\PageTitleSeoAdjustment.cs" />
+    <Compile Include="Entities\SEO\SeoSettings.cs" />
+    <Compile Include="Entities\Theme\ThemeSettings.cs" />
+    <Compile Include="Entities\Theme\ThemeVariable.cs" />
+    <Compile Include="Entities\Users\RoleAccess.cs" />
+    <Compile Include="Entities\Common\Rating.cs" />
+    <Compile Include="Entities\Users\Role.cs" />
+    <Compile Include="Entities\Common\SocialSnippet.cs" />
+    <Compile Include="Entities\Common\Statistic.cs" />
+    <Compile Include="Entities\Users\User.cs" />
+    <Compile Include="Entities\Users\UserActivityLog.cs" />
+    <Compile Include="Entities\Users\UserActivityLogType.cs" />
+    <Compile Include="Entities\Users\UserClaim.cs" />
+    <Compile Include="Entities\Users\UserLogin.cs" />
+    <Compile Include="Entities\Users\UserRegistrationType.cs" />
+    <Compile Include="Entities\Users\UserRole.cs" />
+    <Compile Include="Entities\Cms\Setting.cs" />
+    <Compile Include="Entities\Users\UserShowNameFormat.cs" />
+    <Compile Include="Event\EntityDeleted.cs" />
+    <Compile Include="Event\EntityInserted.cs" />
+    <Compile Include="Event\EntityUpdated.cs" />
+    <Compile Include="Event\IConsumer.cs" />
+    <Compile Include="Extensions\ArganmehrExeption.cs" />
+    <Compile Include="Extensions\IQueryableExtension.cs" />
+    <Compile Include="Extensions\XmlWriterExtensionsDomain.cs" />
+    <Compile Include="Helper\GenericAttribute.cs" />
+    <Compile Include="IO\WebSite\IWebSiteFolder.cs" />
+    <Compile Include="IO\WebSite\VirtualPath\DefaultVirtualPathProvider.cs" />
+    <Compile Include="IO\WebSite\VirtualPath\IVirtualPathProvider.cs" />
+    <Compile Include="IO\WebSite\WebSiteFolder.cs" />
+    <Compile Include="Localization\LocalizationHelper.cs" />
+    <Compile Include="Localization\LocalizedString.cs" />
+    <Compile Include="Localization\Localizer.cs" />
+    <Compile Include="Localization\NullLocalizer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\SecuritySettings.cs" />
+    <Compile Include="Theme\IThemeRegistry.cs" />
+    <Compile Include="Theme\ITopologicSortable.cs" />
+    <Compile Include="Theme\ThemeFolderData.cs" />
+    <Compile Include="Theme\ThemeManifest.cs" />
+    <Compile Include="Theme\ThemeManifestMaterializer.cs" />
+    <Compile Include="Theme\ThemeTouchedEvent.cs" />
+    <Compile Include="Theme\ThemeVariableInfo.cs" />
+    <Compile Include="Theme\ThemeVariableType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{795b21df-4be9-444d-bcc4-674144d560d2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

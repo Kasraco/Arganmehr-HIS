@@ -1,0 +1,200 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--insert all stylesheet links -->
+
+    
+    <link href="Scripts/assets/less/styles.less" rel="stylesheet" media="All" />
+    <link href="Content/bootstrapAdmin.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/AdminTheme.css" rel="stylesheet" />
+    <link href="Content/font.css" rel="stylesheet" />
+    <link href="Scripts/assets/css/googleFont.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Placeholdr.js enables the placeholder attribute -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="Scripts/assets/css/ie8.css">
+        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+        <script type="text/javascript" src="Scripts/assets/plugins/charts-flot/excanvas.min.js"></script>
+
+    <![endif]-->
+    <!-- The following CSS are included as plugins and can be removed if unused-->
+    <link href="Content/animate.css" rel="stylesheet" />
+
+</head>
+<body>    
+    <div id="headerbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="shortcut-tiles tiles-brown">
+                        <div class="tiles-body">
+                            <div class="pull-right"><i class="fa fa-bullhorn"></i></div>
+                        </div>
+                        <div class="tiles-footer">
+                            مدیرت تبلیغات
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="shortcut-tiles tiles-grape">
+                        <div class="tiles-body">
+                            <div class="pull-left"><span class="badge">2</span></div>
+                            <div class="pull-right"><i class="fa fa-group"></i></div>
+
+                        </div>
+                        <div class="tiles-footer">
+                            تماس ها
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="shortcut-tiles tiles-primary">
+                        <div class="tiles-body">
+                            <div class="pull-left"><span class="badge">10</span></div>
+                            <div class="pull-right"><i class="fa fa-envelope-o"></i></div>
+
+                        </div>
+                        <div class="tiles-footer">
+                            پیام ها
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="shortcut-tiles tiles-inverse">
+                        <div class="tiles-body">
+                            <div class="pull-left"><span class="badge">3</span></div>
+                            <div class="pull-right"><i class="fa fa-camera"></i></div>
+                        </div>
+                        <div class="tiles-footer">
+                            گالری
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="shortcut-tiles tiles-midnightblue">
+                        <div class="tiles-body">
+                            <div class="pull-right"><i class="fa fa-cog"></i></div>
+                        </div>
+                        <div class="tiles-footer">
+                            تنظیمات
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="shortcut-tiles tiles-orange">
+                        <div class="tiles-body">
+                            <div class="pull-right"><i class="fa fa-wrench"></i></div>
+                        </div>
+                        <div class="tiles-footer">
+                            پلاگین ها
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <header class="navbar navbar-inverse" role="banner">
+       
+        <a id="rightmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="right" title="Toggle Infobar"></a>       
+        <a id="leftmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="left" title="Toggle Sidebar"></a>
+
+    </header>
+    <div id="page-container">
+        
+        <nav id="page-leftbar" role="navigation">
+            <ul class="acc-menu" id="sidebar">
+                <li id="search">
+                    <a href="javascript:;"><i class="fa fa-search opacity-control"></i></a>
+                    <form>
+                        <input type="text" class="search-query" placeholder="Search...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-home"></i><span>داشبورد</span></a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="javascript:;"><i class="fa fa-bullhorn"></i><span>مدیریت تبلیغات</span> </a>
+                    <ul class="acc-menu">
+                        <li><a href="#">آیتم1</a></li>
+                        <li><a href="#">آیتم2</a></li>
+                        <li><a href="#">آیتم3</a></li>
+                        <li><a href="#">آیتم4</a></li>
+                        <li><a href="#">آیتم5</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:;"><i class="fa fa-briefcase"></i><span class="badge badge-danger">1</span> <span>اطلاعات پایه</span> </a>
+                    <ul class="acc-menu">
+
+
+                        <li><a href="#">آیتم1</a></li>
+                        <li><a href="#">آیتم2</a></li>
+                        <li><a href="#">آیتم3</a></li>
+                        <li><a href="#">آیتم4</a></li>
+                        <li><a href="#">آیتم5</a></li>
+
+                        <li><a href="extras-blank.htm">Blank Page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="fa fa-sitemap"></i><span>Unlimited Level Menu</span></a>
+                    <ul class="acc-menu">
+                        <li><a href="javascript:;">Menu Item 1</a></li>
+                        <li>
+                            <a href="javascript:;">Menu Item 2</a>
+                            <ul class="acc-menu">
+                                <li><a href="javascript:;">Menu Item 2.1</a></li>
+                                <li>
+                                    <a href="javascript:;">Menu Item 2.2</a>
+                                    <ul class="acc-menu">
+                                        <li><a href="javascript:;">Menu Item 2.2.1</a></li>
+                                        <li>
+                                            <a href="javascript:;">Menu Item 2.2.2</a>
+                                            <ul class="acc-menu">
+                                                <li><a href="javascript:;">And deeper yet!</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="page-afterLeftbar" role="navigation">
+           fs
+        </nav>
+        <div id="page-rightbar">
+            <div id="widgetarea"><!-- all rightbar widgets --></div>
+        </div>
+        <div id="page-content">            
+            <div id="wrap">
+                <div id="page-heading"></div>
+                <div class="container"><!-- Content begins here--></div>
+            </div>
+        </div>
+    </div>
+    <footer role="contentinfo"><!--Footer--></footer>
+
+    <script src="Scripts/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/assets/js/jqueryui-1.10.3.min.js"></script>
+    <script src="Scripts/libs/jquery-migrate-1.1.1.js"></script>
+    <script src="Scripts/assets/js/jquery.cookie.js"></script>
+    <script src="Scripts/assets/js/bootstrap.min.js"></script>
+    <script src="Scripts/assets/js/enquire.js"></script>
+    <script src="Scripts/assets/js/bootstrap.min.js"></script>   
+    <script type='text/javascript' src='Scripts/assets/js/jquery.nicescroll.min.js'></script>
+    <script type='text/javascript' src='Scripts/assets/js/placeholdr.js'></script>
+    <script type='text/javascript' src='Scripts/assets/js/application.js'></script>   
+    <script src="Scripts/libs/admin_js.js"></script>
+</body>
+</html>
+

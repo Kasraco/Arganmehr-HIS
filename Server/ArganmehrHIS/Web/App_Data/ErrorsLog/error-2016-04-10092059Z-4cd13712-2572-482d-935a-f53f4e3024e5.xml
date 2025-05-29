@@ -1,0 +1,162 @@
+﻿<error errorId="4cd13712-2572-482d-935a-f53f4e3024e5" application="/LM/W3SVC/6/ROOT" host="DESKTOP-47FMJ16" type="System.InvalidOperationException" message="Page not found: /WebService/CAService" source="Web" detail="System.InvalidOperationException: Page not found: /WebService/CAService&#xD;&#xA;   at Web.StructureMapControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType) in d:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 84&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at Web.StructureMapControllerFactory.CreateController(RequestContext requestContext, String controllerName) in d:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 62&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController&amp; controller, IControllerFactory&amp; factory)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2016-04-10T09:20:59.8168785Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;HTTP_COOKIE:arganmehr.user=5; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL&#xD;&#xA;HTTP_HOST:argserver.ir&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;Cookie: arganmehr.user=5; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL&#xD;&#xA;Host: argserver.ir&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/6/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="6" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/6" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.159.1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/WebService/CAService" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\WebService\CAService" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.159.1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.159.1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="48480" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/WebService/CAService" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="argserver.ir" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="80" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/WebService/CAService" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="fa,en-US;q=0.7,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="arganmehr.user=5; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="argserver.ir" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="arganmehr.user">
+      <value string="5" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+  </cookies>
+</error>

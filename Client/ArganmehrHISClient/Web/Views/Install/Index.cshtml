@@ -1,0 +1,28 @@
+﻿
+<link href="~/Content/bootstrap-fileupload.min.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>سامانه مدیریت HIS ارگانمهر</strong>
+            </div>
+            <div class="panel-body" style="min-height: 300px;">
+             @Html.Action(MVC.Install.ActionNames.CreateCentralAdmin, MVC.Install.Name)
+
+
+
+
+            </div>
+            <div class="panel-footer">
+                <strong>
+                    مرکز سلامت الکترونیک ارگانمهر
+                </strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+}

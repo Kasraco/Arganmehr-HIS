@@ -1,0 +1,194 @@
+﻿<error errorId="65c1ef5c-ddb7-402b-b169-bc8b95f520c2" application="/LM/W3SVC/3/ROOT" host="DESKTOP-47FMJ16" type="System.InvalidOperationException" message="Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached." source="System.Data" detail="System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---&gt; System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.&#xD;&#xA;   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)&#xD;&#xA;   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)&#xD;&#xA;   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.Open()&#xD;&#xA;   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.&lt;Open&gt;b__36(DbConnection t, DbConnectionInterceptionContext c)&#xD;&#xA;   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)&#xD;&#xA;   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)&#xD;&#xA;   at System.Data.Entity.Core.EntityClient.EntityConnection.&lt;Open&gt;b__2()&#xD;&#xA;   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.&lt;&gt;c__DisplayClass1.&lt;Execute&gt;b__0()&#xD;&#xA;   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)&#xD;&#xA;   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)&#xD;&#xA;   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()&#xD;&#xA;   at System.Data.Entity.DbContextTransaction.EnsureOpenConnection()&#xD;&#xA;   at System.Data.Entity.DbContextTransaction..ctor(EntityConnection connection, IsolationLevel isolationLevel)&#xD;&#xA;   at System.Data.Entity.Database.BeginTransaction(IsolationLevel isolationLevel)&#xD;&#xA;   at ServiceLayer.EFServiecs.Common.TransactionPerRequest.ServiceLayer.Contracts.IRunOnEachRequest.Execute() in d:\Project\Arganmehr\Projects\01\ArganmehrHIS\ServiceLayer\EFServiecs\Common\TransactionPerRequest.cs:line 32&#xD;&#xA;   at Web.MvcApplication.Application_BeginRequest(Object sender, EventArgs e) in d:\Project\Arganmehr\Projects\01\ArganmehrHIS\Web\Global.asax.cs:line 66&#xD;&#xA;   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2015-12-27T19:07:24.6107135Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:*/*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.5&#xD;&#xA;HTTP_COOKIE:.ASPXANONYMOUS=xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0; __RequestVerificationToken=Wf8HBNxsYi6trAR3ljxVDaUtXir7dkSrvgjMIkzhaR3fJurVhL01qEoy-uALOl2owFLHBEpafHkPKi5CjyAuIHmTZgG39EQ1R-GWwfT65iA1; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; wrawrsatrsrweasrdxsf=; wrawrsatrsrweasrdxsfw2ewasjret=; DotNetCms=eLroNjDZRHRtX08LqEOwAnMUiHa6AyX_k5sOiWy3cXw-9Us2SzMAz_63JebsEkrDwXEMqhEKJMVOEFrldPHRYjyKFuH0QV682k7fApjHISBFeuL5QoMi1Z6F6046D-VtvHUbNh38_GVzdTFa1KFZynmt80q-tpd58HLZSY5jcOY9ze3OTIAo2uT8dduAJ1nm7gdrNgznPY4-KUpKqJhSptfpareW1FmW7ZmzQkvdFSCfJCxzu40fwf_y8ZGjCxOGMZrEY1OUrTwAVo9_40ECNTpu25adODcfWlv0O3ZnEVCrvwFoP6oHsXXFRrdDbcL-5PNv4Z0GLeI7eYmHh0d7UH3_XiTB6EhbO8PuHyCRo7Lch93Nk-olF-tnehGNKa37QMgT8DzDfQMhu0UVtopm8Ia3zTO-J0DDyL47mKGDcI5uHR7R7xFxjdFlFW_AtueVeMQeEyvoXyVhLpcXOGnnkq-ELxQ-tjUcZ0XEz9y_iqjFvTRloD57tmyDiMWLzSX2aHOQzt5nPzEOz5XihP8OCcMpZEhI5MLpw0CMrwK16oIGT2Rjsux4EiFtsjoFplya8lOlbiENtBnZWm_4vKohgSfmT99mU5wIm-YfkVAEu2UbzJHPYaXkNcYUf_OWkhtR5xkKzJjTGqigfw14hfJQrA; glimpsePolicy=On; glimpseId=مدیر سیستم&#xD;&#xA;HTTP_HOST:localhost:25890&#xD;&#xA;HTTP_REFERER:http://localhost:25890/administrator/user/list&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Accept: */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-US,en;q=0.5&#xD;&#xA;Cookie: .ASPXANONYMOUS=xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0; __RequestVerificationToken=Wf8HBNxsYi6trAR3ljxVDaUtXir7dkSrvgjMIkzhaR3fJurVhL01qEoy-uALOl2owFLHBEpafHkPKi5CjyAuIHmTZgG39EQ1R-GWwfT65iA1; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; wrawrsatrsrweasrdxsf=; wrawrsatrsrweasrdxsfw2ewasjret=; DotNetCms=eLroNjDZRHRtX08LqEOwAnMUiHa6AyX_k5sOiWy3cXw-9Us2SzMAz_63JebsEkrDwXEMqhEKJMVOEFrldPHRYjyKFuH0QV682k7fApjHISBFeuL5QoMi1Z6F6046D-VtvHUbNh38_GVzdTFa1KFZynmt80q-tpd58HLZSY5jcOY9ze3OTIAo2uT8dduAJ1nm7gdrNgznPY4-KUpKqJhSptfpareW1FmW7ZmzQkvdFSCfJCxzu40fwf_y8ZGjCxOGMZrEY1OUrTwAVo9_40ECNTpu25adODcfWlv0O3ZnEVCrvwFoP6oHsXXFRrdDbcL-5PNv4Z0GLeI7eYmHh0d7UH3_XiTB6EhbO8PuHyCRo7Lch93Nk-olF-tnehGNKa37QMgT8DzDfQMhu0UVtopm8Ia3zTO-J0DDyL47mKGDcI5uHR7R7xFxjdFlFW_AtueVeMQeEyvoXyVhLpcXOGnnkq-ELxQ-tjUcZ0XEz9y_iqjFvTRloD57tmyDiMWLzSX2aHOQzt5nPzEOz5XihP8OCcMpZEhI5MLpw0CMrwK16oIGT2Rjsux4EiFtsjoFplya8lOlbiENtBnZWm_4vKohgSfmT99mU5wIm-YfkVAEu2UbzJHPYaXkNcYUf_OWkhtR5xkKzJjTGqigfw14hfJQrA; glimpsePolicy=On; glimpseId=مدیر سیستم&#xD;&#xA;Host: localhost:25890&#xD;&#xA;Referer: http://localhost:25890/administrator/user/list&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/3/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\01\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="3" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/3" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/Glimpse.axd" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\01\ArganmehrHIS\Web\Glimpse.axd" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="n=glimpse_client&amp;hash=8ccbd7d8" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="9696" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/Glimpse.axd" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="25890" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/Glimpse.axd" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="*/*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.5" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string=".ASPXANONYMOUS=xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0; __RequestVerificationToken=Wf8HBNxsYi6trAR3ljxVDaUtXir7dkSrvgjMIkzhaR3fJurVhL01qEoy-uALOl2owFLHBEpafHkPKi5CjyAuIHmTZgG39EQ1R-GWwfT65iA1; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; wrawrsatrsrweasrdxsf=; wrawrsatrsrweasrdxsfw2ewasjret=; DotNetCms=eLroNjDZRHRtX08LqEOwAnMUiHa6AyX_k5sOiWy3cXw-9Us2SzMAz_63JebsEkrDwXEMqhEKJMVOEFrldPHRYjyKFuH0QV682k7fApjHISBFeuL5QoMi1Z6F6046D-VtvHUbNh38_GVzdTFa1KFZynmt80q-tpd58HLZSY5jcOY9ze3OTIAo2uT8dduAJ1nm7gdrNgznPY4-KUpKqJhSptfpareW1FmW7ZmzQkvdFSCfJCxzu40fwf_y8ZGjCxOGMZrEY1OUrTwAVo9_40ECNTpu25adODcfWlv0O3ZnEVCrvwFoP6oHsXXFRrdDbcL-5PNv4Z0GLeI7eYmHh0d7UH3_XiTB6EhbO8PuHyCRo7Lch93Nk-olF-tnehGNKa37QMgT8DzDfQMhu0UVtopm8Ia3zTO-J0DDyL47mKGDcI5uHR7R7xFxjdFlFW_AtueVeMQeEyvoXyVhLpcXOGnnkq-ELxQ-tjUcZ0XEz9y_iqjFvTRloD57tmyDiMWLzSX2aHOQzt5nPzEOz5XihP8OCcMpZEhI5MLpw0CMrwK16oIGT2Rjsux4EiFtsjoFplya8lOlbiENtBnZWm_4vKohgSfmT99mU5wIm-YfkVAEu2UbzJHPYaXkNcYUf_OWkhtR5xkKzJjTGqigfw14hfJQrA; glimpsePolicy=On; glimpseId=مدیر سیستم" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:25890" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:25890/administrator/user/list" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="n">
+      <value string="glimpse_client" />
+    </item>
+    <item name="hash">
+      <value string="8ccbd7d8" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name=".ASPXANONYMOUS">
+      <value string="xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="Wf8HBNxsYi6trAR3ljxVDaUtXir7dkSrvgjMIkzhaR3fJurVhL01qEoy-uALOl2owFLHBEpafHkPKi5CjyAuIHmTZgG39EQ1R-GWwfT65iA1" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsf">
+      <value string="" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsfw2ewasjret">
+      <value string="" />
+    </item>
+    <item name="DotNetCms">
+      <value string="eLroNjDZRHRtX08LqEOwAnMUiHa6AyX_k5sOiWy3cXw-9Us2SzMAz_63JebsEkrDwXEMqhEKJMVOEFrldPHRYjyKFuH0QV682k7fApjHISBFeuL5QoMi1Z6F6046D-VtvHUbNh38_GVzdTFa1KFZynmt80q-tpd58HLZSY5jcOY9ze3OTIAo2uT8dduAJ1nm7gdrNgznPY4-KUpKqJhSptfpareW1FmW7ZmzQkvdFSCfJCxzu40fwf_y8ZGjCxOGMZrEY1OUrTwAVo9_40ECNTpu25adODcfWlv0O3ZnEVCrvwFoP6oHsXXFRrdDbcL-5PNv4Z0GLeI7eYmHh0d7UH3_XiTB6EhbO8PuHyCRo7Lch93Nk-olF-tnehGNKa37QMgT8DzDfQMhu0UVtopm8Ia3zTO-J0DDyL47mKGDcI5uHR7R7xFxjdFlFW_AtueVeMQeEyvoXyVhLpcXOGnnkq-ELxQ-tjUcZ0XEz9y_iqjFvTRloD57tmyDiMWLzSX2aHOQzt5nPzEOz5XihP8OCcMpZEhI5MLpw0CMrwK16oIGT2Rjsux4EiFtsjoFplya8lOlbiENtBnZWm_4vKohgSfmT99mU5wIm-YfkVAEu2UbzJHPYaXkNcYUf_OWkhtR5xkKzJjTGqigfw14hfJQrA" />
+    </item>
+    <item name="glimpsePolicy">
+      <value string="On" />
+    </item>
+    <item name="glimpseId">
+      <value string="مدیر سیستم" />
+    </item>
+  </cookies>
+</error>

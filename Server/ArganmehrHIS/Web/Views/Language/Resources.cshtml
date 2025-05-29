@@ -1,0 +1,113 @@
+﻿@model Telerik.Web.Mvc.GridModel<IocConfig.ViewModel.LanguageVModel.LanguageResourceModel>
+@using Telerik.Web.Mvc.UI;
+@using System.Linq;
+@{
+    var gridPageSize = 25;
+    //page title
+    ViewBag.Title = T("Admin.Configuration.Languages.Localization").Text;
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>سامانه مدیریت HIS ارگانمهر</strong>
+    </div>
+    <div class="panel-body" style="min-height: 300px;">
+
+        <div class="section-header">
+            <div class="title">
+                @T("Admin.Configuration.Languages.Localization")
+            </div>
+        </div>
+        @if (ViewBag.AllLanguages != null)
+        {
+            <table  style="margin-bottom: 10px;">
+                <tr>
+                    <td class="adminTitle">
+                        @T("Admin.Configuration.Languages.Select")
+                    </td>
+                    <td class="adminData">
+                        @Html.DropDownList("localeresource-language", (IEnumerable<SelectListItem>)ViewBag.AllLanguages, new { onchange = "onLocaleResourceLanguageSelected(this.value);" })
+                        <script type="text/javascript">
+                            function onLocaleResourceLanguageSelected(languageid) {
+                                window.location = '@(Url.Action("Resources") + "?languageId=")' + languageid;
+                            }
+                        </script>
+                    </td>
+                </tr>
+            </table>
+        }
+        <table>
+            <tr>
+                <td>
+                    <div class="alert alert-info fade in">
+                        @T("Admin.Configuration.Languages.Resources.Description")
+                        <button class="close" data-dismiss="alert">x</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @(Html.Telerik().Grid<IocConfig.ViewModel.LanguageVModel.LanguageResourceModel>()
+                    .Name("resources-grid")
+                     .BindTo(Model.Data)
+                    .DataKeys(x =>
+                    {
+                        x.Add(y => y.Id).RouteKey("Id");
+                        x.Add(y => y.LanguageId).RouteKey("languageId");
+                    })
+                    .Columns(columns =>
+                    {
+                        columns.Bound(x => x.LanguageName)
+                            .Width("10%")
+                            .ReadOnly()
+                            .Filterable(false);
+                        columns.Bound(x => x.Name).Width("30%");
+                        columns.Bound(x => x.Value).EditorTemplateName("MultilineText").Width("60%");
+                        columns.Command(commands =>
+                        {
+                            commands.Edit().Localize(T);
+                            commands.Delete().Localize(T);
+                        });
+
+                    })
+                    .ToolBar(x => x.Insert())
+                    .Editable(x =>
+                    {
+                        x.Mode(GridEditMode.InLine);
+                    })
+                    .Filterable()
+                    .Pageable(settings => settings.PageSize(gridPageSize).Total(Model.Total).Position(GridPagerPosition.Both))
+                    .DataBinding(dataBinding =>
+                    {
+                        dataBinding.Ajax().Select("Resources", "Language", new { LanguageId = ViewBag.LanguageId })                            
+                            .Update("ResourceUpdate", "Language")
+                            .Delete("ResourceDelete", "Language")
+                            .Insert("ResourceAdd", "Language", new { id = ViewBag.LanguageId });
+                    })
+                    .EnableCustomBinding(true)
+                    .PreserveGridState()
+                    .ClientEvents(x => x.OnEdit("onResourceEdit"))
+                    .ClientEvents(x => x.OnError("Grid_onError")))
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="panel-footer">
+        <strong>
+            مرکز سلامت الکترونیک ارگانمهر
+        </strong>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function onResourceEdit(e) {
+        if (e.mode == "insert") {
+            $(e.form).find("td:first").html("@ViewBag.LanguageName");
+        }
+    }
+    function Grid_onError(e) {
+        alert(e.XMLHttpRequest.responseText);
+        e.preventDefault();
+    }
+</script>

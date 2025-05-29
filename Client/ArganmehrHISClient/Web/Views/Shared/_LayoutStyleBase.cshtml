@@ -1,0 +1,9 @@
+﻿@if (this.ShouldUseRtlTheme())
+{
+
+    @Styles.Render("~/Content/css")
+}
+else
+{
+    @Styles.Render("~/Content/cssLTR")
+}

@@ -1,0 +1,212 @@
+﻿<error errorId="df3148fe-b33e-4853-b0a7-bfb35fb7590b" application="/LM/W3SVC/26/ROOT" host="DESKTOP-47FMJ16" type="System.InvalidOperationException" message="The asynchronous action method 'login' returns a Task, which cannot be executed synchronously." source="System.Web.Mvc" detail="System.InvalidOperationException: The asynchronous action method 'login' returns a Task, which cannot be executed synchronously.&#xD;&#xA;   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;&gt;c__DisplayClass17.&lt;InvokeActionMethodWithFilters&gt;b__14()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;&gt;c__DisplayClass17.&lt;InvokeActionMethodWithFilters&gt;b__14()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;&gt;c__DisplayClass17.&lt;InvokeActionMethodWithFilters&gt;b__14()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)&#xD;&#xA;   at System.Web.Mvc.Controller.ExecuteCore()&#xD;&#xA;   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)&#xD;&#xA;   at System.Web.Mvc.Controller.&lt;&gt;c__DisplayClass19.&lt;BeginExecute&gt;b__13()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.&lt;.cctor&gt;b__0(IAsyncResult asyncResult, Action action)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;BeginProcessRequest&gt;b__5(IAsyncResult asyncResult, ProcessRequestState innerState)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2016-03-03T11:34:46.3327802Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:286&#xD;&#xA;HTTP_CONTENT_TYPE:application/x-www-form-urlencoded&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;HTTP_COOKIE:glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22; __atuvc=12%7C2; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=kPtQXtMd-FcMsou2Xl_S06lG34qmkiZBN5kTHmyAJ_4HNsyx1yk1_1orknMa2RyhyFqEFK9gqz1YcmGK0HMlMW_TxtSqHNFvGNhBV3n33wk1; wrawrsatrsrweasrdxsf=eefeb3ec4423482fb3d2014c783224c4=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU8MEexmOi7Cv+FUnRDl9QDzm1N73K0C2HMOk7QmkmNQY3uH16Gv75jUC4ficEISIvzXQpELiE8bNIntf1YJswWVTkdIE0KwFOQTv8Yaw6rswA==; wrawrsatrsrweasrdxsfw2ewasjret=&#xD;&#xA;HTTP_HOST:localhost:1094&#xD;&#xA;HTTP_REFERER:http://localhost:1094/account/login&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 286&#xD;&#xA;Content-Type: application/x-www-form-urlencoded&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;Cookie: glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22; __atuvc=12%7C2; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=kPtQXtMd-FcMsou2Xl_S06lG34qmkiZBN5kTHmyAJ_4HNsyx1yk1_1orknMa2RyhyFqEFK9gqz1YcmGK0HMlMW_TxtSqHNFvGNhBV3n33wk1; wrawrsatrsrweasrdxsf=eefeb3ec4423482fb3d2014c783224c4=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU8MEexmOi7Cv+FUnRDl9QDzm1N73K0C2HMOk7QmkmNQY3uH16Gv75jUC4ficEISIvzXQpELiE8bNIntf1YJswWVTkdIE0KwFOQTv8Yaw6rswA==; wrawrsatrsrweasrdxsfw2ewasjret=&#xD;&#xA;Host: localhost:1094&#xD;&#xA;Referer: http://localhost:1094/account/login&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/26/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\Server\06\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="286" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="26" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/26" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/account/login" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\Server\06\ArganmehrHIS\Web\account\login" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="22324" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/account/login" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1094" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/account/login" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="286" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="fa,en-US;q=0.7,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22; __atuvc=12%7C2; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=kPtQXtMd-FcMsou2Xl_S06lG34qmkiZBN5kTHmyAJ_4HNsyx1yk1_1orknMa2RyhyFqEFK9gqz1YcmGK0HMlMW_TxtSqHNFvGNhBV3n33wk1; wrawrsatrsrweasrdxsf=eefeb3ec4423482fb3d2014c783224c4=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU8MEexmOi7Cv+FUnRDl9QDzm1N73K0C2HMOk7QmkmNQY3uH16Gv75jUC4ficEISIvzXQpELiE8bNIntf1YJswWVTkdIE0KwFOQTv8Yaw6rswA==; wrawrsatrsrweasrdxsfw2ewasjret=" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:1094" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:1094/account/login" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="__RequestVerificationToken">
+      <value string="pMIAhsCkTXiwLas75GX79oHV3dMC4FP6EXNVPDEU9M8PtESA3CYn96zMa3AMdB4jUqmRSHe-O2DIuk5s5nE1LObWcMFDclXPvT-2H_JhkiE1" />
+    </item>
+    <item name="UserName">
+      <value string="SystemAdmin" />
+    </item>
+    <item name="Password">
+      <value string="Admi1234@gmail.com" />
+    </item>
+    <item name="RememberMe">
+      <value string="true" />
+      <value string="false" />
+    </item>
+    <item name="CaptchaDeText">
+      <value string="eefeb3ec4423482fb3d2014c783224c4" />
+    </item>
+    <item name="CaptchaInputText">
+      <value string="12" />
+    </item>
+  </form>
+  <cookies>
+    <item name="glimpsePolicy">
+      <value string="" />
+    </item>
+    <item name="MyLanguageCookieName">
+      <value string="en-US" />
+    </item>
+    <item name="smartstore.customer">
+      <value string="a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22" />
+    </item>
+    <item name="__atuvc">
+      <value string="12%7C2" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="kPtQXtMd-FcMsou2Xl_S06lG34qmkiZBN5kTHmyAJ_4HNsyx1yk1_1orknMa2RyhyFqEFK9gqz1YcmGK0HMlMW_TxtSqHNFvGNhBV3n33wk1" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsf">
+      <value string="" />
+      <value string="" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsfw2ewasjret">
+      <value string="" />
+    </item>
+  </cookies>
+</error>

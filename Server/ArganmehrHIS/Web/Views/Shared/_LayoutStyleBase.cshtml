@@ -1,0 +1,12 @@
+﻿@if (this.ShouldUseRtlTheme())
+{
+
+    @Styles.Render("~/Content/css")
+}
+else
+{
+    @Styles.Render("~/Content/cssLTR")
+}
+<link href="~/Content/2012.2.607/telerik.common.css" rel="stylesheet" />
+<link href="~/Content/2012.2.607/telerik.telerik.min.css" rel="stylesheet" />
+<link href="~/Content/2012.2.607/telerik.rtl.css" rel="stylesheet" />

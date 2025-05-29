@@ -1,0 +1,10 @@
+@using Common.Controller.NotyHelper
+@*@using Web.RazorHelpers*@
+@if (TempData.ContainsKey(Noty.TempDataKey))
+{
+    var noty = TempData[Noty.TempDataKey] as Noty;
+    //@NotyBuilder.ShowNotyMessages(noty);
+    @krbNotyBuilder.ShowNotyMessages(noty);
+    
+}
+

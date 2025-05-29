@@ -1,0 +1,20 @@
+﻿@{
+
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        فعال سازی حساب کاربری
+    </div>
+    <div class="panel-body">
+        <p class="lead">
+            با تشکر از عضویت شما در سایت. حساب شما با موفقیت فعال شد. برای ورود به حساب خود کلیک کنید
+        </p>
+    </div>
+    <div class="panel-footer">
+        @Html.ActionLink("ورود به حساب", MVC.Account.ActionNames.Login, MVC.Account.Name,
+        routeValues: new { area = "" }, htmlAttributes: new { @class = "btn btn-block btn-md btn-success" })
+    </div>
+</div>
+
+

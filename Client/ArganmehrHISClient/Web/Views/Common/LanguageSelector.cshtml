@@ -1,0 +1,29 @@
+﻿@model ViewModel.Common.LanguageSelectorModel
+@using IocConfig;
+
+@if (Model.AvailableLanguages.Count > 1)
+{
+    var webHelper = ProjectObjectFactory.Container.GetInstance<ServiceLayer.IWebHelper>();
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">
+        @foreach (var lang in Model.AvailableLanguages)
+        {
+            <a title="@lang.NativeName" rel="tooltip nofollow" class="btn btn-default "
+               href='@webHelper.ModifyQueryString(Url.RouteUrl("ChangeLanguage", new { langid = lang.Id }), "returnurl=" + Url.Encode(Model.ReturnUrls[lang.SeoCode]), null)'>
+                @if (Model.UseImages)
+                {
+                    <img title='@lang.Name' alt='@lang.Name' @(lang.Id == Model.CurrentLanguageId ? " class=selected" : null)
+                         src="@Url.Content("~/Content/Images/flags/" + @lang.FlagImageFileName)" width="16" height="11" />
+                    <span>@lang.Name</span>
+                }
+                else
+                {
+                    @lang.ISOCode.ToUpper().Substring(0, 2)
+                    <span>@lang.Name</span>
+                }
+            </a>
+        }
+    </div>
+
+
+
+}

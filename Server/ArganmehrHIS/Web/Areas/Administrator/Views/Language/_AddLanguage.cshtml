@@ -1,0 +1,130 @@
+﻿@model ViewModel.AdminArea.Arganmehr.LanguageModel
+@using IocConfig.Extensions;
+@using IocConfig.Localization;
+@using IocConfig.UI;
+@using IocConfig.Setting;
+@using Common.Helpers.Extentions;
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">x</span></button>
+            <h3>
+                زبان جدید
+            </h3>
+        </div>
+        <div class="modal-body ">
+            @*enctype = "multipart/form-data" ,*@
+
+            @using (Ajax.BeginForm(MVC.Administrator.Language.ActionNames.AddLanguage, MVC.Administrator.Language.Name, null,
+                                   new AjaxOptions
+                                   {
+                                       HttpMethod = "POST",
+                                       InsertionMode = InsertionMode.Replace,
+                                       LoadingElementId = "loadingMessage",
+                                       UpdateTargetId = "pnl-AdminContainer"
+                                   },
+                                   new { @class = "form-horizontal" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(false)
+                @Html.HiddenFor(model => model.Id)
+                @Html.Arganmehr().TabStrip().Name("language-edit").Style(TabsStyle.Tabs).Position(TabsPosition.Top).Items(x =>
+                {
+                    x.Add().Text(T("Admin.Common.Info").Text).Content(TabInfo()).Selected(true);
+                    x.Add().Text(T("Admin.Common.Institutions").Text).Content(TabInstitutions());
+
+                    //generate an event
+                    // EngineContext.Current.Resolve<IEventPublisher>().Publish(new TabStripCreated(x, "language-edit", this.Html, this.Model));
+                })
+
+                @helper TabInfo()
+{
+
+                <div class="form-group">
+                    @Html.SmartLabelFor(m => m.LanguageName, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.NoAutoCompleteTextBoxFor(m => m.LanguageName)
+                        @Html.ValidationMessageFor(m => m.LanguageName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class=" form-group ">
+                    @Html.SmartLabelFor(m => m.LanguageCulture, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.DropDownListFor(x => x.LanguageCulture, Model.AvailableCultures, new { Style = "direction:ltr;" })
+                        @Html.ValidationMessageFor(m => m.LanguageCulture, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class=" form-group">
+                    @Html.SmartLabelFor(m => m.UniqueSeoCode, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.DropDownListFor(x => x.UniqueSeoCode, Model.AvailableTwoLetterLanguageCodes, new { Style = "direction:ltr;" })
+                        @Html.ValidationMessageFor(m => m.UniqueSeoCode, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    @Html.SmartLabelFor(m => m.FlagImageFileName, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        <select name="FlagImageFileName">
+                            <option></option>
+                            @foreach (var item in Model.AvailableFlags)
+                            {
+                                var select = item.Value.IsCaseInsensitiveEqual(Model.FlagImageFileName);
+                                <option value="@item.Value" @(select ? "selected='selected'" : "")>@item.Text</option>
+                            }
+                        </select>
+
+                        @Html.ValidationMessageFor(m => m.FlagImageFileName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.SmartLabelFor(m => m.Rtl, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(m => m.Rtl)
+                        @Html.ValidationMessageFor(m => m.Rtl, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.SmartLabelFor(m => m.Published, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(m => m.Published)
+                        @Html.ValidationMessageFor(m => m.Published, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.SmartLabelFor(m => m.DisplayOrder, true, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.NoAutoCompleteTextBoxForLtr(m => m.DisplayOrder)
+                        @Html.ValidationMessageFor(m => m.DisplayOrder, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+}
+
+                @helper TabInstitutions()
+{}
+
+
+                <div class="form-group" id="registerResult">
+
+                    <div id="registerResultstatus"></div>
+                </div>
+                <input type="submit" id="btnResetPassword" name="name" value="" style="display: none;" />
+
+
+                <div id="status"></div>
+
+            }
+        </div>
+        <div class="modal-footer" style="text-align: right;">
+            <input type="submit" name="btn-submit" onclick="$('#btnResetPassword').trigger('click');" value="ذخیره" class="btn btn-success" />
+
+            <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">بستن</button>
+        </div>
+    </div>
+</div>

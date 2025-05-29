@@ -1,0 +1,28 @@
+﻿@using ServiceLayer.Security
+@using Microsoft.AspNet.Identity
+@using Web.Extentions;
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm(MVC.Account.ActionNames.LogOff, MVC.Account.Name, FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("سلام " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: new { area = "" }, htmlAttributes: new { title = "Manage", @class = "nofollow" })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">خروج</a></li>
+          
+                <li>@Html.SecureActionLink("پنل مدیریت", MVC.Administrator.Home.ActionNames.Index, MVC.Administrator.Home.Name, new { area = MVC.Administrator.Name }, null)</li>
+           
+        </ul>
+    }
+   
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("ورود", MVC.Account.ActionNames.Login, MVC.Account.Name, null, null)</li>
+        <li>@Html.ActionLink("عضویت", MVC.Account.ActionNames.Register, MVC.Account.Name, null, null)</li>
+    </ul>
+}

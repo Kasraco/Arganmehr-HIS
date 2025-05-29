@@ -1,0 +1,158 @@
+﻿@using Common.Helpers
+@using RazorHelpers
+@model ViewModel.AdminArea.User.AddUserViewModel
+
+@{
+    ViewBag.Title = "درج کاربر";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm(MVC.Administrator.User.ActionNames.Create, MVC.Administrator.User.Name, new { area = MVC.Administrator.Name }, FormMethod.Post, new { User = "form", @class = "form-horizontal", autocomplete = "off", id = "createUserForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <strong>مشخصات کاربر</strong>
+                </div>
+                <div class="panel-body">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#requiredInfo" data-toggle="tab">مشخصات ضروری</a>
+                        </li>
+                        <li>
+                            <a href="#optionalInfo" data-toggle="tab">مشخصات اختیاری</a>
+                        </li>
+                        <li>
+                            <a href="#permissions" data-toggle="tab">دسترسی های</a>
+                        </li>
+                        <li>
+                            <a href="#settings" data-toggle="tab">تنظیمات کاربری</a>
+                        </li>
+                        <li>
+                            <a href="#roles" data-toggle="tab">گروه های کاربری</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="requiredInfo">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.NoAutoCompleteTextBoxForLtr(m => m.Email)
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.NoAutoCompleteTextBoxForLtr(m => m.UserName)
+                                    @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.FormControlPasswordFor(m => m.Password)
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.NameForShow, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.NoAutoCompleteTextBoxFor(m => m.NameForShow)
+                                    @Html.ValidationMessageFor(m => m.NameForShow, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" id="optionalInfo">
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.AdministratorComment, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(m => m.AdministratorComment, new { @rows = 3, @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.AdministratorComment, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.GooglePlusId, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.NoAutoCompleteTextBoxForLtr(m => m.GooglePlusId)
+                                    @Html.ValidationMessageFor(m => m.GooglePlusId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FaceBookId, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.NoAutoCompleteTextBoxForLtr(m => m.FaceBookId)
+                                    @Html.ValidationMessageFor(m => m.FaceBookId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.AvatarFileName, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10" dir="ltr">
+                                    <input id="AvatarImage" name="AvatarImage" type="file" accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+                        @*<div class="tab-pane" id="permissions">
+                            @CheckBoxListBuilder.CheckBoxList("PermissionIds", ViewBag.Permissions)
+                        </div>*@
+                        <div class="tab-pane" id="settings">
+                            <div class="row">
+                               
+                                <div class="col-md-4">
+                                    @Html.CheckBoxFor(m => m.IsBanned, new { @class = "checkbox-inline" })
+                                    @Html.LabelFor(m => m.IsBanned, new { @class = "control-label" })
+                                </div>
+
+                                <div class="col-md-4">
+                                    @Html.CheckBoxFor(m => m.CanChangeProfilePicture, new { @class = "checkbox-inline" })
+                                    @Html.LabelFor(m => m.CanChangeProfilePicture, new { @class = "control-label" })
+                                </div>
+                                <div class="col-md-4">
+                                    @Html.CheckBoxFor(m => m.CanUploadFile, new { @class = "checkbox-inline" })
+                                    @Html.LabelFor(m => m.CanUploadFile, new { @class = "control-label" })
+                                </div>
+                                <div class="col-md-4">
+                                    @Html.CheckBoxFor(m => m.CanModifyFirsAndLastName, new { @class = "checkbox-inline" })
+                                    @Html.LabelFor(m => m.CanModifyFirsAndLastName, new { @class = "control-label" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="roles">
+                            @RoleCheckBoxListBuilder.CheckBoxList("RoleIds", ViewBag.Roles)
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" autocomplete="off" onclick="AjaxForm.CustomSubmit(this, 'createUserForm')" data-loading-text="در حال ارسال اطلاعات" class="btn btn-success btn-block">
+                                ثبت کاربر جدید
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(function () {
+            warningBeforeLoad();
+            makeUploadFile("AvatarImage");
+        });
+    </script>
+}

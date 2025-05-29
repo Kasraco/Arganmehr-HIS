@@ -1,0 +1,73 @@
+﻿@model ViewModel.Install.InstalInstitution
+
+@using (Html.BeginForm(MVC.Install.ActionNames.CreateCentralAdmin, MVC.Install.Name, FormMethod.Post, new { @class = "form-horizontal", role = "form", autocomplate = "off", id = "createinstitutionForm"  }))
+{
+    @Html.AntiForgeryToken()
+    <h4>@T("Arganmehr.Common.Install.ConnectToCA.Text")</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    
+    <div class="row">
+        <div class="col  col-md-8">  
+            
+            <div class="form-group">
+                @Html.LabelFor(m => m.InstitutionCode, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.InstitutionCode, new { @class = "form-control" })
+                </div>
+            </div> 
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.CentralAdminWebServiceURL, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.CentralAdminWebServiceURL, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CentralAdminWebServiceURL)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.InstitutionWebServiceURL, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.InstitutionWebServiceURL, new { @class = "form-control" })
+                </div>
+            </div>            
+
+            
+            <div class="form-group">
+                @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                </div>
+            </div>
+
+
+        </div>
+      
+         
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" autocomplete="off" onclick="AjaxForm.CustomSubmit(this, 'createinstitutionForm')" data-loading-text="در حال ارسال اطلاعات" class="btn btn-success btn-block">
+                دخیره اطلاعات
+            </button>
+        </div>
+    </div>
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(function () {
+            warningBeforeLoad();
+        });
+    </script>
+}
+

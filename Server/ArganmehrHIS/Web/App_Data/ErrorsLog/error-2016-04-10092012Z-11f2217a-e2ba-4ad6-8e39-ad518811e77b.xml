@@ -1,0 +1,142 @@
+﻿<error errorId="11f2217a-e2ba-4ad6-8e39-ad518811e77b" application="/LM/W3SVC/6/ROOT" host="DESKTOP-47FMJ16" type="System.ServiceModel.EndpointNotFoundException" message="The service '/WebService/_vti_bin/ListData.svc' does not exist." source="System.ServiceModel.Activation" detail="System.Web.HttpException (0x80004005): The service '/WebService/_vti_bin/ListData.svc' does not exist. ---&gt; System.ServiceModel.EndpointNotFoundException: The service '/WebService/_vti_bin/ListData.svc' does not exist.&#xD;&#xA;   at System.ServiceModel.ServiceHostingEnvironment.HostingManager.EnsureServiceAvailable(String normalizedVirtualPath, EventTraceActivity eventTraceActivity)&#xD;&#xA;   at System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailableFast(String relativeVirtualPath, EventTraceActivity eventTraceActivity)&#xD;&#xA;   at System.ServiceModel.Activation.HostedHttpRequestAsyncResult.HandleRequest()&#xD;&#xA;   at System.ServiceModel.Activation.HostedHttpRequestAsyncResult.BeginRequest()&#xD;&#xA;   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)&#xD;&#xA;   at System.ServiceModel.Activation.HostedHttpRequestAsyncResult.End(IAsyncResult result)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.OnAsyncHandlerCompletion(IAsyncResult ar)" time="2016-04-10T09:20:12.6436000Z" statusCode="404">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:Keep-Alive&#xD;&#xA;HTTP_HOST:argserver.ir&#xD;&#xA;HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 4.0.30319.42000)&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: Keep-Alive&#xD;&#xA;Host: argserver.ir&#xD;&#xA;User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 4.0.30319.42000)&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/6/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="6" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/6" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.159.1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/WebService/_vti_bin/ListData.svc/$metadata" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\WebService\_vti_bin\ListData.svc" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.159.1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.159.1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="48390" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/WebService/_vti_bin/ListData.svc" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="argserver.ir" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="80" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/WebService/_vti_bin/ListData.svc" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="Keep-Alive" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="argserver.ir" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 4.0.30319.42000)" />
+    </item>
+  </serverVariables>
+</error>

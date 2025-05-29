@@ -1,0 +1,171 @@
+﻿<error errorId="f76489c5-c57b-4c3d-b0df-0faf9baaa03f" application="/LM/W3SVC/3/ROOT" host="DESKTOP-8AUNF6M" type="System.Web.HttpException" message="Path '/RazorHelpers/CheckBoxListBuilder.cshtml' is forbidden." source="System.Web" detail="System.Web.HttpException (0x80004005): Path '/RazorHelpers/CheckBoxListBuilder.cshtml' is forbidden.&#xD;&#xA;   at System.Web.HttpForbiddenHandler.ProcessRequest(HttpContext context)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="مدیر سیستم" time="2015-09-09T09:15:08.6507549Z" statusCode="403">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.5&#xD;&#xA;HTTP_COOKIE:wrawrsatrsrweasrdxsf=; wrawrsatrsrweasrdxsfw2ewasjret=; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=9ibHDnTDIQYB-SMAshtKs-ZCfn_mOV2HuDgdIpg4J6XTJIK3kSPQIsTLpdWP4wPVHkd8t4AWrnrdr95pV6E3rJva7tmUka3Z_5NZaheNqyw1; DotNetCms=VmjQYeOz4X9hoi7MKFziNrTyNqkWKx0Wzd7VgjspmvkjfVkwn9gyBg4Nt6hx70hglCNbVWSwC8r3zapRk45yJi76s-xegpp9J7WZgLQdG1sqZS0ZRUm5cAFKowLyDM_EII5S3uNIvnUnNdHvySf9iHcw18E_Y19LfI0f-noo2KPP4jJS4D2lSXWy0hJ_Ok4PzRGRiEtwyFMxB1-bSpkKi6SFgahq3O0fzadk6ok3krnGzHpWCdJTaJ0LWfw_h8NP_grH261Zi10p8SufteP04T3vlSuuCRXtDZeI1EwIbm2QSvooiOeyy_xWxUId9gVD9iL3TTDvp0dL8_XhNiDLjdM_QDhoVCYPyaXN7mz6OTr2F1TlwZO9pjV3pmxa1BgQ_8uEgaJKViHtij-OJ1sBfOFoCTbAIN7gLfJF6CUE6JQc9XtqOJFoNyHsf2Xl9nztoQY6ye2WUDdPjOeC79PMrSHOJUXKnI8Zp7XDGf8neQtZiCzhWo90vJOgviMYm3WRt_Mz0aeQMMCggIl3VUzb4WllFA_88wpYGzUpnlDxnqfb4hsqh7NxpagYDWQNL4XavtPlL_dUuw1XX3RtM_8FlbyJgKHxMq7CEyqnor177v-WtjJhCKPv4YJPt8IgYCluAwg19dnDohLwpBs6GyG91JcN_k6RcJssrVjl_KQdtkM&#xD;&#xA;HTTP_HOST:localhost:25890&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-US,en;q=0.5&#xD;&#xA;Cookie: wrawrsatrsrweasrdxsf=; wrawrsatrsrweasrdxsfw2ewasjret=; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=9ibHDnTDIQYB-SMAshtKs-ZCfn_mOV2HuDgdIpg4J6XTJIK3kSPQIsTLpdWP4wPVHkd8t4AWrnrdr95pV6E3rJva7tmUka3Z_5NZaheNqyw1; DotNetCms=VmjQYeOz4X9hoi7MKFziNrTyNqkWKx0Wzd7VgjspmvkjfVkwn9gyBg4Nt6hx70hglCNbVWSwC8r3zapRk45yJi76s-xegpp9J7WZgLQdG1sqZS0ZRUm5cAFKowLyDM_EII5S3uNIvnUnNdHvySf9iHcw18E_Y19LfI0f-noo2KPP4jJS4D2lSXWy0hJ_Ok4PzRGRiEtwyFMxB1-bSpkKi6SFgahq3O0fzadk6ok3krnGzHpWCdJTaJ0LWfw_h8NP_grH261Zi10p8SufteP04T3vlSuuCRXtDZeI1EwIbm2QSvooiOeyy_xWxUId9gVD9iL3TTDvp0dL8_XhNiDLjdM_QDhoVCYPyaXN7mz6OTr2F1TlwZO9pjV3pmxa1BgQ_8uEgaJKViHtij-OJ1sBfOFoCTbAIN7gLfJF6CUE6JQc9XtqOJFoNyHsf2Xl9nztoQY6ye2WUDdPjOeC79PMrSHOJUXKnI8Zp7XDGf8neQtZiCzhWo90vJOgviMYm3WRt_Mz0aeQMMCggIl3VUzb4WllFA_88wpYGzUpnlDxnqfb4hsqh7NxpagYDWQNL4XavtPlL_dUuw1XX3RtM_8FlbyJgKHxMq7CEyqnor177v-WtjJhCKPv4YJPt8IgYCluAwg19dnDohLwpBs6GyG91JcN_k6RcJssrVjl_KQdtkM&#xD;&#xA;Host: localhost:25890&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/3/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="E:\Project\Other Project\MVCTemplate\MVC5-v3\MVC5-v3\MVC5\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="3" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/3" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/RazorHelpers/CheckBoxListBuilder.cshtml" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="E:\Project\Other Project\MVCTemplate\MVC5-v3\MVC5-v3\MVC5\Web\RazorHelpers\CheckBoxListBuilder.cshtml" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="56096" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/RazorHelpers/CheckBoxListBuilder.cshtml" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="25890" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/RazorHelpers/CheckBoxListBuilder.cshtml" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.5" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="wrawrsatrsrweasrdxsf=; wrawrsatrsrweasrdxsfw2ewasjret=; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=9ibHDnTDIQYB-SMAshtKs-ZCfn_mOV2HuDgdIpg4J6XTJIK3kSPQIsTLpdWP4wPVHkd8t4AWrnrdr95pV6E3rJva7tmUka3Z_5NZaheNqyw1; DotNetCms=VmjQYeOz4X9hoi7MKFziNrTyNqkWKx0Wzd7VgjspmvkjfVkwn9gyBg4Nt6hx70hglCNbVWSwC8r3zapRk45yJi76s-xegpp9J7WZgLQdG1sqZS0ZRUm5cAFKowLyDM_EII5S3uNIvnUnNdHvySf9iHcw18E_Y19LfI0f-noo2KPP4jJS4D2lSXWy0hJ_Ok4PzRGRiEtwyFMxB1-bSpkKi6SFgahq3O0fzadk6ok3krnGzHpWCdJTaJ0LWfw_h8NP_grH261Zi10p8SufteP04T3vlSuuCRXtDZeI1EwIbm2QSvooiOeyy_xWxUId9gVD9iL3TTDvp0dL8_XhNiDLjdM_QDhoVCYPyaXN7mz6OTr2F1TlwZO9pjV3pmxa1BgQ_8uEgaJKViHtij-OJ1sBfOFoCTbAIN7gLfJF6CUE6JQc9XtqOJFoNyHsf2Xl9nztoQY6ye2WUDdPjOeC79PMrSHOJUXKnI8Zp7XDGf8neQtZiCzhWo90vJOgviMYm3WRt_Mz0aeQMMCggIl3VUzb4WllFA_88wpYGzUpnlDxnqfb4hsqh7NxpagYDWQNL4XavtPlL_dUuw1XX3RtM_8FlbyJgKHxMq7CEyqnor177v-WtjJhCKPv4YJPt8IgYCluAwg19dnDohLwpBs6GyG91JcN_k6RcJssrVjl_KQdtkM" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:25890" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="wrawrsatrsrweasrdxsf">
+      <value string="" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsfw2ewasjret">
+      <value string="" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="9ibHDnTDIQYB-SMAshtKs-ZCfn_mOV2HuDgdIpg4J6XTJIK3kSPQIsTLpdWP4wPVHkd8t4AWrnrdr95pV6E3rJva7tmUka3Z_5NZaheNqyw1" />
+    </item>
+    <item name="DotNetCms">
+      <value string="VmjQYeOz4X9hoi7MKFziNrTyNqkWKx0Wzd7VgjspmvkjfVkwn9gyBg4Nt6hx70hglCNbVWSwC8r3zapRk45yJi76s-xegpp9J7WZgLQdG1sqZS0ZRUm5cAFKowLyDM_EII5S3uNIvnUnNdHvySf9iHcw18E_Y19LfI0f-noo2KPP4jJS4D2lSXWy0hJ_Ok4PzRGRiEtwyFMxB1-bSpkKi6SFgahq3O0fzadk6ok3krnGzHpWCdJTaJ0LWfw_h8NP_grH261Zi10p8SufteP04T3vlSuuCRXtDZeI1EwIbm2QSvooiOeyy_xWxUId9gVD9iL3TTDvp0dL8_XhNiDLjdM_QDhoVCYPyaXN7mz6OTr2F1TlwZO9pjV3pmxa1BgQ_8uEgaJKViHtij-OJ1sBfOFoCTbAIN7gLfJF6CUE6JQc9XtqOJFoNyHsf2Xl9nztoQY6ye2WUDdPjOeC79PMrSHOJUXKnI8Zp7XDGf8neQtZiCzhWo90vJOgviMYm3WRt_Mz0aeQMMCggIl3VUzb4WllFA_88wpYGzUpnlDxnqfb4hsqh7NxpagYDWQNL4XavtPlL_dUuw1XX3RtM_8FlbyJgKHxMq7CEyqnor177v-WtjJhCKPv4YJPt8IgYCluAwg19dnDohLwpBs6GyG91JcN_k6RcJssrVjl_KQdtkM" />
+    </item>
+  </cookies>
+</error>

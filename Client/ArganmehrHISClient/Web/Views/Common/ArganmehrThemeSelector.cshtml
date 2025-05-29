@@ -1,0 +1,17 @@
+﻿@model ViewModel.Common.ArganmehrThemeSelectorModel
+
+@if (Model.AvailableThemes.Count > 1)
+{
+    using (Ajax.BeginForm("ChangeTheme", "Common", null, new AjaxOptions { OnComplete = "onThemeChangedRequestCompleted();" }, new { id = "form-theme-selector" }))
+    {
+        var themes = Model.AvailableThemes.Select(x => new SelectListItem
+        {
+            Text = x.Title,
+            Value = x.Name,
+            Selected = x.Name.Equals(Model.CurrentTheme.Name, StringComparison.InvariantCultureIgnoreCase)
+        });
+
+        @Html.DropDownList("themeName", themes, new { @class = "theme-list noskin" })
+    }
+ 
+}

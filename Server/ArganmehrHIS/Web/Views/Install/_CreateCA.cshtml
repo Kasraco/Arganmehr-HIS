@@ -1,0 +1,62 @@
+﻿@model ViewModel.Install.CentralAdminModel
+
+@using (Html.BeginForm(MVC.Install.ActionNames.CreateCentralAdmin, MVC.Install.Name, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>ایجاد مرکز مدیریت</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    
+    <div class="row">
+        <div class="col  col-md-8">
+            <div class="form-group">
+                <label class="col-md-2 control-label">@T("salam")</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Title, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.WebServiceURL, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.WebServiceURL, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <label >
+                لوگوی مرکز مدیریت
+            </label>
+            <div class="fileupload fileupload-new" data-provides="fileupload">
+                <div class="fileupload-preview thumbnail" style="width: 240px; height: 100%; min-height: 128px;"></div>
+
+                <div>
+                    <span class="btn btn-default btn-file">
+                        <span class="fileupload-new">انتخاب فایل</span>
+                        <span class="fileupload-exists">تغییر</span>
+                        <input type="file" id="CentarlAdminLogo" name="CentarlAdminLogo" class="file-input" data-val-required="لطفا لوگوی مربوطه را وارد کنید" />
+                        @Html.ValidationMessage("CentarlAdminLogo")
+                    </span>
+                    <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">حذف</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+}

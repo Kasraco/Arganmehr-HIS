@@ -1,0 +1,185 @@
+﻿@using RazorHelpers
+@model ViewModel.AdminArea.Arganmehr.InstitutionModel
+@{
+    ViewBag.Title = "ویرایش موسسه";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@if (!Model.IsSystemAccount)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        @using (Html.BeginForm(MVC.Institution.ActionNames.Delete,
+                        MVC.Administrator.User.Name, new { area = MVC.Administrator.Name }, FormMethod.Post, new { role = "form", @class = "form-horizontal", autocomplete = "off", id = "deleteUserForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(a => a.Id)
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" autocomplete="off" onclick="AjaxForm.CustomSubmit(this, 'deleteUserForm')" data-loading-text="در حال ارسال اطلاعات" class="btn btn-danger btn-sm">
+                                        حذف کاربر
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }*@
+
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm(MVC.Institution.ActionNames.EditInstitution, MVC.Institution.Name, null, FormMethod.Post, new { User = "form", @class = "form-horizontal", autocomplate = "off", id = "editinstitutionForm" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(a => a.Id)
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <strong>مشخصات موسسه</strong>
+                </div>
+                <div class="panel-body">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#requiredInfo" data-toggle="tab">مشخصات ضروری</a>
+                        </li>
+
+                        <li>
+                            <a href="#requiredCall" data-toggle="tab">مشخصات تماس</a>
+                        </li>
+
+                        <li>
+                            <a href="#requiredSecurity" data-toggle="tab">مشخصات امنیتی</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="requiredInfo">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.EmailAddress, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.EmailAddress, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.InstitutionCode, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.InstitutionCode, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.InstitutionCode, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.InstitutionTitle, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.InstitutionTitle, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.InstitutionTitle, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="tab-pane active" id="requiredCall">
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Address, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(m => m.Address, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.PostalCode, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.PostalCode, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.TelephoneNumber, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.TelephoneNumber, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.TelephoneNumber, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.MobileNumber, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.MobileNumber, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FaxNumber, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.FaxNumber, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.FaxNumber, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane active" id="requiredSecurity">
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.WebServiceAddress, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.WebServiceAddress, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.WebServiceAddress, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" autocomplete="off" onclick="AjaxForm.CustomSubmit(this, 'editinstitutionForm')" data-loading-text="در حال ارسال اطلاعات" class="btn btn-success btn-block">
+                                دخیره اطلاعات
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(function () {
+            warningBeforeLoad();
+        })
+    </script>
+}

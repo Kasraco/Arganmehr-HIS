@@ -1,0 +1,6 @@
+﻿\ManageResource\
+\obj\
+\bin\
+.user
+.vspscc
+excludes.txt

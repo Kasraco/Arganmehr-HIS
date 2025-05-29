@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3151FC4-6C88-4323-858A-9AA522D54BC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceLayer</RootNamespace>
+    <AssemblyName>ServiceLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.0.4.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EFSecondLevelCache, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EFSecondLevelCache.1.1.4.0\lib\net45\EFSecondLevelCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Extended">
+      <HintPath>..\..\packages\EntityFramework.Extended.6.1.0.168\lib\net45\EntityFramework.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Mvc.Mailer">
+      <HintPath>..\..\packages\MvcMailer-vs2013.4.5.1-pre\lib\45\Mvc.Mailer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RefactorThis.GraphDiff">
+      <HintPath>..\..\packages\RefactorThis.GraphDiff.2.0.1\lib\RefactorThis.GraphDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UAParser, Version=2.1.0.0, Culture=neutral, PublicKeyToken=f7377bf021646069, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UAParser.2.1.0.0\lib\net40-Client\UAParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonServices.cs" />
+    <Compile Include="Congfiguration\LocalizationSettings.cs" />
+    <Compile Include="Congfiguration\SettingService.cs" />
+    <Compile Include="Context\ICAContext.cs" />
+    <Compile Include="Context\IWorkContext.cs" />
+    <Compile Include="Contracts\AM\CA\ICentralAdminService.cs" />
+    <Compile Include="Contracts\AM\Directory\ICountryService.cs" />
+    <Compile Include="Contracts\AM\Directory\IStateProvinceService.cs" />
+    <Compile Include="Contracts\AM\IInstitutionService.cs" />
+    <Compile Include="Contracts\AM\Setting\IThemeVariablesService.cs" />
+    <Compile Include="Contracts\Common\IMobileDeviceHelper.cs" />
+    <Compile Include="Contracts\Common\IUserAgent.cs" />
+    <Compile Include="Contracts\IApplicationRoleManager.cs" />
+    <Compile Include="Contracts\IApplicationSignInManager.cs" />
+    <Compile Include="Contracts\IApplicationUserManager.cs" />
+    <Compile Include="Contracts\ICustomRoleStore.cs" />
+    <Compile Include="Contracts\ICustomUserStore.cs" />
+    <Compile Include="Contracts\IPermissionService.cs" />
+    <Compile Include="Contracts\IRoleAccessManager.cs" />
+    <Compile Include="Contracts\IRunAfterEachRequest.cs" />
+    <Compile Include="Contracts\IRunAtInit.cs" />
+    <Compile Include="Contracts\IRunAtStartUp.cs" />
+    <Compile Include="Contracts\IRunOnEachRequest.cs" />
+    <Compile Include="Contracts\IRunOnError.cs" />
+    <Compile Include="Contracts\ISettingService.cs" />
+    <Compile Include="CustomAspNetIdentity\CustomSecurityStampValidator.cs" />
+    <Compile Include="EFServiecs\AM\CA\CentralAdminService.cs" />
+    <Compile Include="EFServiecs\AM\InstitutionService.cs" />
+    <Compile Include="EFServiecs\AM\Directory\CountryService.cs" />
+    <Compile Include="EFServiecs\AM\Directory\StateProvinceService.cs" />
+    <Compile Include="EFServiecs\Roles\ApplicationRoleManager.cs" />
+    <Compile Include="EFServiecs\Common\ApplicationSignInManager.cs" />
+    <Compile Include="EFServiecs\Users\ApplicationUserManager.cs" />
+    <Compile Include="EFServiecs\Roles\CustomRoleStore.cs" />
+    <Compile Include="EFServiecs\Users\CustomUserStore.cs" />
+    <Compile Include="EFServiecs\Common\EmailService.cs" />
+    <Compile Include="EFServiecs\Roles\PermissionService.cs" />
+    <Compile Include="EFServiecs\Common\SettingService.cs" />
+    <Compile Include="EFServiecs\Common\SmsService.cs" />
+    <Compile Include="CustomAspNetIdentity\CustomClaimFactory.cs" />
+    <Compile Include="CustomAspNetIdentity\CustomPasswordValidator.cs" />
+    <Compile Include="CustomAspNetIdentity\CustomUserValidator.cs" />
+    <Compile Include="EFServiecs\Common\TransactionPerRequest.cs" />
+    <Compile Include="Helper\DateTimeSettings.cs" />
+    <Compile Include="Helper\GenericAttributeService.cs" />
+    <Compile Include="Helper\IDateTimeHelper.cs" />
+    <Compile Include="Helper\IGenericAttributeService.cs" />
+    <Compile Include="ICommonServices.cs" />
+    <Compile Include="IWebHelper.cs" />
+    <Compile Include="Localization\ILanguageService.cs" />
+    <Compile Include="Localization\ILocalizationService.cs" />
+    <Compile Include="Localization\ILocalizedEntityService.cs" />
+    <Compile Include="Localization\LanguageService.cs" />
+    <Compile Include="Localization\LocalizationService.cs" />
+    <Compile Include="Localization\LocalizedEntityService.cs" />
+    <Compile Include="Logger\DefaultLogger.cs" />
+    <Compile Include="Logger\NullLogger.cs" />
+    <Compile Include="Mailers\IUserMailer.cs" />
+    <Compile Include="Mailers\UserMailer.cs" />
+    <Compile Include="Orders\CheckoutState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryExtensions\RoleQueryExtentions.cs" />
+    <Compile Include="QueryExtensions\UserQueryExtentions.cs" />
+    <Compile Include="Security\ActivityLogAttribute.cs" />
+    <Compile Include="Security\AdministratorPermissions.cs" />
+    <Compile Include="Security\DotNetCmsClaimTypes.cs" />
+    <Compile Include="Security\ForumPermissions.cs" />
+    <Compile Include="Security\MvcAuthorizeAttribute.cs" />
+    <Compile Include="Security\PermissionModel.cs" />
+    <Compile Include="Security\PermissionRecord.cs" />
+    <Compile Include="Security\AssignableToRolePermissions.cs" />
+    <Compile Include="Security\StandardRoles.cs" />
+    <Compile Include="Security\UserDirectPermissions.cs" />
+    <Compile Include="Settings\ExternalAuthSettings.cs" />
+    <Compile Include="Settings\ISettings.cs" />
+    <Compile Include="Settings\SeoSettings.cs" />
+    <Compile Include="Settings\SettingsBase.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\SocialSetting.cs" />
+    <Compile Include="Settings\GeneralSetting.cs" />
+    <Compile Include="Settings\UserSettings.cs" />
+    <Compile Include="ThemService\IText.cs" />
+    <Compile Include="ThemService\Text.cs" />
+    <Compile Include="WebServiceManager\InstitutionServer.cs" />
+    <Compile Include="WebServiceManager\WebClientWrapperBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{795b21df-4be9-444d-bcc4-674144d560d2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{A5AD7839-9524-4896-9009-97F1C45F7578}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainClasses\DomainClasses.csproj">
+      <Project>{72B9849F-931A-40C0-B11E-44324CD46250}</Project>
+      <Name>DomainClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{1F30BF22-BAC2-4F0F-9C1F-2EE1282E25FD}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{51986C43-DB68-4A80-AE14-4FFD7A9E91A4}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,74 @@
+﻿@using RazorHelpers
+@using Web.Extentions
+@model ViewModel.AdminArea.User.UserSearchRequest
+@{
+    ViewBag.Title = "مدیریت کاربران";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-3">
+                @Html.ActionLink("درج کاربر جدید", MVC.Administrator.User.ActionNames.Create, MVC.Administrator.User.Name, new { area = "Administrator" }, new { @class = "btn btn-sm btn-info" })
+            </div>
+        </div>
+
+    </div>
+
+
+    @using (Ajax.BeginForm(MVC.Administrator.User.ActionNames.ListAjax, MVC.Administrator.User.Name, new { area = MVC.Administrator.Name }, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "userList", OnComplete = "onComplete", OnSuccess = "AjaxForm.ResetButton('userSearchButton')" }, new { @class = "form-horizontal", id = "userSearchForm" }))
+    {
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.SearchFieldValue, new { @class = "col-md-4 control-label" })
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.SearchFieldValue, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.SearchField, new { @class = "col-md-4 control-label" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(m => m.SearchField)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Status, new { @class = "col-md-5 control-label" })
+                        <div class="col-md-7">
+                            @Html.EditorFor(m => m.Status)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" autocomplete="off" onclick="AjaxForm.CustomSubmit(this, 'userSearchForm')" id="userSearchButton"
+                            data-loading-text="در حال ارسال" class="btn btn-success btn-md">
+                        جستجو
+                    </button>
+                </div>
+
+            </div>
+
+            @*<div id="roles">
+                @CheckBoxListBuilder.CheckBoxList("RoleIds", ViewBag.Roles)
+            </div>*@
+        </div>
+
+        
+    }
+
+</div>
+
+<div class="panel panel-default" id="userList">
+
+
+    @{Html.SecureRenderAction(MVC.Administrator.User.ActionNames.ListAjax, MVC.Administrator.User.Name);}
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")}

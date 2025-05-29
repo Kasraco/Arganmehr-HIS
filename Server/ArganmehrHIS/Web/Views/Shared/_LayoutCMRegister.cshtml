@@ -1,0 +1,122 @@
+﻿@using StackExchange.Profiling
+@using Common.Helpers
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avant">
+    <meta name="author" content="The Red Team">
+    <link href="~/Content/normalize.css" rel="stylesheet" />
+    <!-- <link href="~/Scripts/assets/less/styles.less" rel="stylesheet/less" media="all">  -->
+    <link href="~/Content/JQWidgets/jqx.base.css" rel="stylesheet" />
+
+
+    <link href="~/Content/bootstrapAdmin.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/AdminTheme.css" rel="stylesheet" />
+    <link href="~/Content/font.css" rel="stylesheet" />
+    <link href="~/Scripts/assets/css/googleFont.css" rel="stylesheet" />
+    <link href='~/Scripts/assets/demo/variations/default.css' rel='stylesheet' type='text/css' media='all' id='styleswitcher'>
+
+    <link href='~/Scripts/assets/demo/variations/default.css' rel='stylesheet' type='text/css' media='all' id='headerswitcher'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Placeholdr.js enables the placeholder attribute -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="~/Scripts/assets/css/ie8.css">
+        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+        <script type="text/javascript" src="~/Scripts/assets/plugins/charts-flot/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- The following CSS are included as plugins and can be removed if unused-->
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=/NoScript.html">
+    </noscript>
+    @RenderSection("Headers", false)
+
+
+
+</head>
+<body> 
+    @*Begin SideBar ----------------------------------------*@
+    <div id="page-container">
+       
+
+     
+        @*Begin Page Content ----------------------------------------*@
+        <div id="page-content">
+            <div id='wrap'>                
+                <div class="container">
+                    @RenderBody()
+                  
+
+
+                </div>
+                <!-- container -->
+            </div>
+            <!--wrap -->
+        </div>
+        <!-- page-content -->
+        @*End Page Content ----------------------------------------*@
+
+        <footer role="contentinfo">
+            <div class="clearfix">
+                <ul class="list-unstyled list-inline pull-left">
+                    <li>مرکز سلامت الکترونیک ارگانمهر</li>
+                    <button class=" btn btn-inverse-alt btn-xs hidden-print" id="back-to-top"><i class="fa fa-arrow-up"></i></button>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+    
+
+    <!-- begin logon modal form -->
+    <div id="logOnModal" style="z-index: 99999999;" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    <!-- end logon modal form -->
+    <!-- page-container -->
+    <!--
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="~/Scripts/assets/js/jquery-1.10.2.min.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript">!window.jQuery.ui && document.write(unescape('%3Cscript src="assets/js/jqueryui-1.10.3.min.js'))</script>
+    -->
+
+    <script src="~/Scripts/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/assets/js/jqueryui-1.10.3.min.js"></script>
+    <script type='text/javascript' src="~/Scripts/libs/jquery-migrate-1.1.1.js"></script>
+    <script src="~/Scripts/libs/jquery.form.js"></script>
+    <script type='text/javascript' src="~/Scripts/libs/bootstrap.js"></script>
+
+    <script type='text/javascript' src='~/Scripts/assets/js/enquire.js'></script>
+    <script type='text/javascript' src='~/Scripts/assets/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='~/Scripts/assets/js/jquery.nicescroll.min.js'></script>
+    <script type='text/javascript' src='~/Scripts/assets/plugins/codeprettifier/prettify.js'></script>
+    <script type='text/javascript' src='~/Scripts/assets/plugins/sparklines/jquery.sparklines.min.js'></script>
+    <script type='text/javascript' src='~/Scripts/assets/plugins/form-toggle/toggle.min.js'></script>
+    <script src="~/Scripts/noty/packaged/jquery.noty.packaged.min.js"></script>
+
+    @RenderSection("scriptsMiddle", false)
+
+    <script type='text/javascript' src='~/Scripts/assets/js/application.js'></script>
+    <script type='text/javascript' src='~/Scripts/assets/demo/demo.js'></script>
+    <script src="~/Scripts/libs/admin_js.js"></script>
+
+
+
+    @RenderSection("scripts", required: false)
+    @{Html.RenderPartial(MVC.Shared.Views.ViewNames._Noty);}
+    @MiniProfiler.RenderIncludes()
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+﻿@using RazorHelpers
+@using Web.Extentions
+@model InstituionSearchRequest
+
+@{
+    ViewBag.Title = "مدیریت موسسه ها";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-3">
+                @Html.ActionLink("درج موسسه جدید", MVC.Institution.ActionNames.AddInstitution, MVC.Institution.Name, null, new { @class = "btn btn-sm btn-info" })
+            </div>
+        </div>
+
+    </div>
+
+    null
+    @using (Ajax.BeginForm(MVC.Institution.ActionNames.ListAjax, MVC.Institution.Name, null, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "institutionList", OnComplete = "onComplete", OnSuccess = "AjaxForm.ResetButton('institutionSearchButton')" }, new { @class = "form-horizontal", id = "institutionSearchForm" }))
+    {
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.SearchFieldValue, new { @class = "col-md-4 control-label" })
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.SearchFieldValue, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.SearchField, new { @class = "col-md-4 control-label" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(m => m.SearchField)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Status, new { @class = "col-md-5 control-label" })
+                        <div class="col-md-7">
+                            @Html.EditorFor(m => m.Status)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" autocomplete="off" onclick="AjaxForm.CustomSubmit(this, 'institutionSearchForm')" id="institutionSearchButton"
+                            data-loading-text="در حال ارسال" class="btn btn-success btn-md">
+                        جستجو
+                    </button>
+                </div>
+
+            </div>
+
+            @*<div id="roles">
+                    @CheckBoxListBuilder.CheckBoxList("RoleIds", ViewBag.Roles)
+                </div>*@
+        </div>
+
+
+    }
+
+</div>
+
+<div class="panel panel-default" id="institutionList">
+
+
+    @{Html.SecureRenderAction(MVC.Institution.ActionNames.ListAjax, MVC.Institution.Name);}
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")}

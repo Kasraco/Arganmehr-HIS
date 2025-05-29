@@ -1,0 +1,194 @@
+﻿<error errorId="a6d93fef-20d3-4208-ae27-7b0bf727b9aa" application="/LM/W3SVC/26/ROOT" host="DESKTOP-47FMJ16" type="System.InvalidOperationException" message="Page not found: /administrator" source="Web" detail="System.InvalidOperationException: Page not found: /administrator&#xD;&#xA;   at Web.StructureMapControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType) in d:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 82&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at Web.StructureMapControllerFactory.CreateController(RequestContext requestContext, String controllerName) in d:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 62&#xD;&#xA;   at MvcSiteMapProvider.DI.ControllerFactoryDecorator.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController&amp; controller, IControllerFactory&amp; factory)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)&#xD;&#xA;   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.&lt;&gt;c__DisplayClass7.&lt;BeginProcessRequest&gt;b__6()&#xD;&#xA;   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)&#xD;&#xA;   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)&#xD;&#xA;   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)&#xD;&#xA;   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)&#xD;&#xA;   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)&#xD;&#xA;   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)&#xD;&#xA;   at System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)&#xD;&#xA;   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)&#xD;&#xA;   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName)&#xD;&#xA;   at ASP._Page_Themes_Alpha_Views_Shared__Layout_cshtml.Execute() in d:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\Themes\Alpha\Views\Shared\_Layout.cshtml:line 50&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer)&#xD;&#xA;   at System.Web.WebPages.WebPageBase.&lt;&gt;c__DisplayClass3.&lt;RenderPageCore&gt;b__2(TextWriter writer)&#xD;&#xA;   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)&#xD;&#xA;   at System.Web.WebPages.WebPageExecutingBase.WriteTo(TextWriter writer, HelperResult content)&#xD;&#xA;   at System.Web.WebPages.WebPageBase.Write(HelperResult result)&#xD;&#xA;   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)&#xD;&#xA;   at System.Web.WebPages.WebPageBase.PopContext()&#xD;&#xA;   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)&#xD;&#xA;   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)&#xD;&#xA;   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)&#xD;&#xA;   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.&lt;BeginExecuteCore&gt;b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.&lt;BeginExecute&gt;b__15(IAsyncResult asyncResult, Controller controller)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;BeginProcessRequest&gt;b__5(IAsyncResult asyncResult, ProcessRequestState innerState)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="مدیر سیستم" time="2016-03-26T17:56:12.1234423Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;HTTP_COOKIE:glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=f8a76957-521c-4f86-a407-f55d3a6bf624; __atuvc=12%7C2; arganmehr.user=4; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; am.UserThemeChoice=Alpha; __RequestVerificationToken=d7t_LsHKinEMZWF0RnLo0tEIb5bI3ahkpMhTwznOR1s_Kj6hdQHVG_Pyuwy3GPA-U_aFudFb-zd9EH6LGJG4R6THlaL94xTLpcNpxV2JCfU1; DotNetCms=KusZZBVZ2vNjkEYhbT_8g3GyVrpgMWPMvW6twUkcXtaVM_ax5gwdj46iUjVyE9egIKiszvwEFLrtdmOu7Ig-a6UGT0HX-t3vhfUQEmwIn944ohbYNFf2BWevk79ngaKoWvZT0zg8ly-pH5fDn26fIb8uJ_WnWeYmcpGdTwxc0dxIVYzR8PfxU6ngnMLrSEPFn0FG_DDkzkCfXLORbfQIn6UOEbBLFDBLqE_PVq2iLS4RNUBJFipmUgFu2wn9gBJD78fRi_ejBcB8sNeQ9Dho1WNd9_O0nbQRid2KZzatMIeY-q_kvVbFf5_NBpEGvEfZcnCkCqWkQY1GAOIfg_ZKZmg2GXtwi5zyAEvXEybGqv96Zpesywi5jvn-SivMM8WafXqLpmK-04Ujbhp_bEJR-3X9XGzskei_H1sIPyrS9vLF2ni8EqPSjwnm9tkl1O4T85PCdp3Cf_Jt6a3J387kjZPmgFpEk8-wfhU1ko3-_H1RO-pjfRLp4r1isFJ8MsPQ2-GZXbHLIu3H2JkyLSPxwHawu8FzOO3kZuT6yaAqgQ2Wi1wyJI7l7X5M4K-LigtEC9P8qHVtKSGURefmfvqt3hipDcDq9bgU-BRgN6gX6SVPp0Dqq9_NSRLRT3jyyzch; wrawrsatrsrweasrdxsf=4d9ab782cf9843b182adcdfa33e1c78e=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/tRQAqDuND9B8HJ36afZ9jHXg8Jjy0DevwPBtFiSbYtaEdZqqJIBzR7DANEZUvWsC9rByTQsWN2TEoIXlUzx5IKH4LtpY9VU3fN55PNA8RiQ==; wrawrsatrsrweasrdxsfw2ewasjret=&#xD;&#xA;HTTP_HOST:localhost:1094&#xD;&#xA;HTTP_REFERER:http://localhost:1094/account/login&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;Cookie: glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=f8a76957-521c-4f86-a407-f55d3a6bf624; __atuvc=12%7C2; arganmehr.user=4; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; am.UserThemeChoice=Alpha; __RequestVerificationToken=d7t_LsHKinEMZWF0RnLo0tEIb5bI3ahkpMhTwznOR1s_Kj6hdQHVG_Pyuwy3GPA-U_aFudFb-zd9EH6LGJG4R6THlaL94xTLpcNpxV2JCfU1; DotNetCms=KusZZBVZ2vNjkEYhbT_8g3GyVrpgMWPMvW6twUkcXtaVM_ax5gwdj46iUjVyE9egIKiszvwEFLrtdmOu7Ig-a6UGT0HX-t3vhfUQEmwIn944ohbYNFf2BWevk79ngaKoWvZT0zg8ly-pH5fDn26fIb8uJ_WnWeYmcpGdTwxc0dxIVYzR8PfxU6ngnMLrSEPFn0FG_DDkzkCfXLORbfQIn6UOEbBLFDBLqE_PVq2iLS4RNUBJFipmUgFu2wn9gBJD78fRi_ejBcB8sNeQ9Dho1WNd9_O0nbQRid2KZzatMIeY-q_kvVbFf5_NBpEGvEfZcnCkCqWkQY1GAOIfg_ZKZmg2GXtwi5zyAEvXEybGqv96Zpesywi5jvn-SivMM8WafXqLpmK-04Ujbhp_bEJR-3X9XGzskei_H1sIPyrS9vLF2ni8EqPSjwnm9tkl1O4T85PCdp3Cf_Jt6a3J387kjZPmgFpEk8-wfhU1ko3-_H1RO-pjfRLp4r1isFJ8MsPQ2-GZXbHLIu3H2JkyLSPxwHawu8FzOO3kZuT6yaAqgQ2Wi1wyJI7l7X5M4K-LigtEC9P8qHVtKSGURefmfvqt3hipDcDq9bgU-BRgN6gX6SVPp0Dqq9_NSRLRT3jyyzch; wrawrsatrsrweasrdxsf=4d9ab782cf9843b182adcdfa33e1c78e=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/tRQAqDuND9B8HJ36afZ9jHXg8Jjy0DevwPBtFiSbYtaEdZqqJIBzR7DANEZUvWsC9rByTQsWN2TEoIXlUzx5IKH4LtpY9VU3fN55PNA8RiQ==; wrawrsatrsrweasrdxsfw2ewasjret=&#xD;&#xA;Host: localhost:1094&#xD;&#xA;Referer: http://localhost:1094/account/login&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/26/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="26" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/26" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/administrator" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\Server\09\ArganmehrHIS\Web\administrator" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="22996" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/administrator" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1094" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/administrator" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="fa,en-US;q=0.7,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=f8a76957-521c-4f86-a407-f55d3a6bf624; __atuvc=12%7C2; arganmehr.user=4; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; am.UserThemeChoice=Alpha; __RequestVerificationToken=d7t_LsHKinEMZWF0RnLo0tEIb5bI3ahkpMhTwznOR1s_Kj6hdQHVG_Pyuwy3GPA-U_aFudFb-zd9EH6LGJG4R6THlaL94xTLpcNpxV2JCfU1; DotNetCms=KusZZBVZ2vNjkEYhbT_8g3GyVrpgMWPMvW6twUkcXtaVM_ax5gwdj46iUjVyE9egIKiszvwEFLrtdmOu7Ig-a6UGT0HX-t3vhfUQEmwIn944ohbYNFf2BWevk79ngaKoWvZT0zg8ly-pH5fDn26fIb8uJ_WnWeYmcpGdTwxc0dxIVYzR8PfxU6ngnMLrSEPFn0FG_DDkzkCfXLORbfQIn6UOEbBLFDBLqE_PVq2iLS4RNUBJFipmUgFu2wn9gBJD78fRi_ejBcB8sNeQ9Dho1WNd9_O0nbQRid2KZzatMIeY-q_kvVbFf5_NBpEGvEfZcnCkCqWkQY1GAOIfg_ZKZmg2GXtwi5zyAEvXEybGqv96Zpesywi5jvn-SivMM8WafXqLpmK-04Ujbhp_bEJR-3X9XGzskei_H1sIPyrS9vLF2ni8EqPSjwnm9tkl1O4T85PCdp3Cf_Jt6a3J387kjZPmgFpEk8-wfhU1ko3-_H1RO-pjfRLp4r1isFJ8MsPQ2-GZXbHLIu3H2JkyLSPxwHawu8FzOO3kZuT6yaAqgQ2Wi1wyJI7l7X5M4K-LigtEC9P8qHVtKSGURefmfvqt3hipDcDq9bgU-BRgN6gX6SVPp0Dqq9_NSRLRT3jyyzch; wrawrsatrsrweasrdxsf=4d9ab782cf9843b182adcdfa33e1c78e=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/tRQAqDuND9B8HJ36afZ9jHXg8Jjy0DevwPBtFiSbYtaEdZqqJIBzR7DANEZUvWsC9rByTQsWN2TEoIXlUzx5IKH4LtpY9VU3fN55PNA8RiQ==; wrawrsatrsrweasrdxsfw2ewasjret=" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:1094" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:1094/account/login" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="glimpsePolicy">
+      <value string="" />
+    </item>
+    <item name="MyLanguageCookieName">
+      <value string="en-US" />
+    </item>
+    <item name="smartstore.customer">
+      <value string="f8a76957-521c-4f86-a407-f55d3a6bf624" />
+    </item>
+    <item name="__atuvc">
+      <value string="12%7C2" />
+    </item>
+    <item name="arganmehr.user">
+      <value string="4" />
+      <value string="4" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="am.UserThemeChoice">
+      <value string="Alpha" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="d7t_LsHKinEMZWF0RnLo0tEIb5bI3ahkpMhTwznOR1s_Kj6hdQHVG_Pyuwy3GPA-U_aFudFb-zd9EH6LGJG4R6THlaL94xTLpcNpxV2JCfU1" />
+    </item>
+    <item name="DotNetCms">
+      <value string="KusZZBVZ2vNjkEYhbT_8g3GyVrpgMWPMvW6twUkcXtaVM_ax5gwdj46iUjVyE9egIKiszvwEFLrtdmOu7Ig-a6UGT0HX-t3vhfUQEmwIn944ohbYNFf2BWevk79ngaKoWvZT0zg8ly-pH5fDn26fIb8uJ_WnWeYmcpGdTwxc0dxIVYzR8PfxU6ngnMLrSEPFn0FG_DDkzkCfXLORbfQIn6UOEbBLFDBLqE_PVq2iLS4RNUBJFipmUgFu2wn9gBJD78fRi_ejBcB8sNeQ9Dho1WNd9_O0nbQRid2KZzatMIeY-q_kvVbFf5_NBpEGvEfZcnCkCqWkQY1GAOIfg_ZKZmg2GXtwi5zyAEvXEybGqv96Zpesywi5jvn-SivMM8WafXqLpmK-04Ujbhp_bEJR-3X9XGzskei_H1sIPyrS9vLF2ni8EqPSjwnm9tkl1O4T85PCdp3Cf_Jt6a3J387kjZPmgFpEk8-wfhU1ko3-_H1RO-pjfRLp4r1isFJ8MsPQ2-GZXbHLIu3H2JkyLSPxwHawu8FzOO3kZuT6yaAqgQ2Wi1wyJI7l7X5M4K-LigtEC9P8qHVtKSGURefmfvqt3hipDcDq9bgU-BRgN6gX6SVPp0Dqq9_NSRLRT3jyyzch" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsf">
+      <value string="4d9ab782cf9843b182adcdfa33e1c78e=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/tRQAqDuND9B8HJ36afZ9jHXg8Jjy0DevwPBtFiSbYtaEdZqqJIBzR7DANEZUvWsC9rByTQsWN2TEoIXlUzx5IKH4LtpY9VU3fN55PNA8RiQ==" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsfw2ewasjret">
+      <value string="" />
+    </item>
+  </cookies>
+</error>

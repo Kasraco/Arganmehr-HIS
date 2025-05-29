@@ -1,0 +1,66 @@
+@* Generator: MvcHelper GeneratePrettyNames: true *@
+
+@using ViewModel.AdminArea.Role
+
+
+
+
+@helper CheckBoxList(string name, List<System.Web.Mvc.SelectListItem> items)
+{
+
+    string[] strsplit = { "-" };
+    List<CheckListBoxGroup> lstGroup = new List<CheckListBoxGroup>();
+    CheckListBoxGroup chG;
+    var qGroup = (from p in items
+                  select new
+                  {
+                      GroupText = p.Text.Split(strsplit, StringSplitOptions.None)[0]
+
+                  }).Distinct().ToList();
+
+    foreach (var g in qGroup)
+    {
+        var qItems = (from p in items
+                      where p.Text.StartsWith(g.GroupText)
+                      select new CheckListBoxItem
+                      {
+                          Selected = p.Selected,
+                          Text = p.Text.Split(strsplit, StringSplitOptions.None)[1],
+                          Value = p.Value
+                      }).ToList();
+
+        chG = new CheckListBoxGroup();
+        chG.GroupText = g.GroupText;
+        chG.Items = new List<CheckListBoxItem>();
+        chG.Items = qItems;
+
+        lstGroup.Add(chG);
+
+
+    }
+
+
+
+    <div class="row">
+
+        @foreach (var itemG in lstGroup)
+        {
+            <div class="col-md-12">
+                <h4 class=" bg-dark">@itemG.GroupText</h4>
+                <div class="row">
+                    @foreach (var item in itemG.Items)
+                    {
+                        <text>
+                            <div class="col-md-3">
+                                <input type="checkbox" @if (item.Selected) { <text> checked="checked" </text>            }
+                                       id="@item.Value" name="@name" value="@item.Value" class="checkbox-inline" />
+                                <label for="@item.Value" class="control-label">@item.Text</label>
+                            </div>
+                        </text>
+                    }
+                </div>
+
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4955766B-D513-4867-9F5C-F333A8E66F9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IocConfig</RootNamespace>
+    <AssemblyName>IocConfig</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <WebGreaseLibPath>..\..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper, Version=4.0.4.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BundleTransformer.Core, Version=1.8.23.0, Culture=neutral, PublicKeyToken=973c344c93aac60d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\BundleTransformer.Core.1.8.23\lib\net40\BundleTransformer.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BundleTransformer.Less, Version=1.8.25.0, Culture=neutral, PublicKeyToken=973c344c93aac60d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\BundleTransformer.Less.1.8.25\lib\net40\BundleTransformer.Less.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidation, Version=5.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentValidation.5.6.2.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.Core, Version=1.5.0.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\JavaScriptEngineSwitcher.Core.1.5.0\lib\net40\JavaScriptEngineSwitcher.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.Core.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mvc.Mailer">
+      <HintPath>..\..\packages\MvcMailer-vs2013.4.5.1-pre\lib\45\Mvc.Mailer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap, Version=3.1.6.186, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\structuremap.3.1.6.186\lib\net40\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap.Net4, Version=3.1.6.186, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\structuremap.3.1.6.186\lib\net40\StructureMap.Net4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\structuremap.web.3.1.6.186\lib\net40\StructureMap.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.XML" />
+    <Reference Include="Telerik.Web.Mvc">
+      <HintPath>..\..\..\..\06\ArganmehrHIS\Web\bin\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="UAParser, Version=2.1.0.0, Culture=neutral, PublicKeyToken=f7377bf021646069, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UAParser.2.1.0.0\lib\net40-Client\UAParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CentralAdminContext.cs" />
+    <Compile Include="Common\MobileDeviceHelper.cs" />
+    <Compile Include="Common\UAParserUserAgent.cs" />
+    <Compile Include="Controllers\AdminControllerBase.cs" />
+    <Compile Include="Controllers\ContollerExtensions.cs" />
+    <Compile Include="Controllers\FileManager.cs" />
+    <Compile Include="Controllers\PublicControllerBase.cs" />
+    <Compile Include="Controllers\SmartController.cs" />
+    <Compile Include="DependencyInjection\ArganmehrRegistry.cs" />
+    <Compile Include="DependencyInjection\AspNetIdentityRegistery.cs" />
+    <Compile Include="DependencyInjection\AutoMapperRegistery.cs" />
+    <Compile Include="DependencyInjection\ConsumerRegistry.cs" />
+    <Compile Include="DependencyInjection\ProjectObjectFactory.cs" />
+    <Compile Include="DependencyInjection\StructureMapDependencyResolver.cs" />
+    <Compile Include="Extensions\GenericAttributeExtentions.cs" />
+    <Compile Include="Extensions\HtmlExtensions.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
+    <Compile Include="Extensions\HttpExtensions.cs" />
+    <Compile Include="Extensions\HttpSessionStateExtensions.cs" />
+    <Compile Include="Extensions\IPageAssetsBuilder.cs" />
+    <Compile Include="Extensions\IWidgetSelector.cs" />
+    <Compile Include="Extensions\LayoutExtensions.cs" />
+    <Compile Include="Extensions\MiscExtensions.cs" />
+    <Compile Include="Extensions\PostedFileResult.cs" />
+    <Compile Include="Extensions\RouteExtensions.cs" />
+    <Compile Include="Extensions\TelerikExtensions.cs" />
+    <Compile Include="Extensions\WidgetRouteInfo.cs" />
+    <Compile Include="Extensions\WidgetZoneModel.cs" />
+    <Compile Include="Filters\CustomerLastActivityAttribute.cs" />
+    <Compile Include="Filters\JsonNetAttribute.cs" />
+    <Compile Include="Filters\ParameterBasedOnFormNameAttribute.cs" />
+    <Compile Include="Filters\RequireHttpsByConfigAttribute.cs" />
+    <Compile Include="Filters\SslRequirement.cs" />
+    <Compile Include="FrameworkCacheConsumer.cs" />
+    <Compile Include="Helper\DateTimeHelper.cs" />
+    <Compile Include="Localization\ILocalizedModel.cs" />
+    <Compile Include="Localization\IModelAttribute.cs" />
+    <Compile Include="Localization\LanguageSeoCodeAttribute.cs" />
+    <Compile Include="Localization\LocalizationExtentions.cs" />
+    <Compile Include="Localization\LocalizedRoute.cs" />
+    <Compile Include="Localization\LocalizedUrlHelper.cs" />
+    <Compile Include="Localization\SetWorkingCultureAttribute.cs" />
+    <Compile Include="Localization\SmartResourceDisplayName.cs" />
+    <Compile Include="Modeling\JsonNetResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DependencyInjection\ServiceLayerRegistery.cs" />
+    <Compile Include="DependencyInjection\StructureMapFilterProvider.cs" />
+    <Compile Include="DependencyInjection\StructureMapHttpControllerActivator.cs" />
+    <Compile Include="DependencyInjection\StructureMapSignalRDependencyResolver.cs" />
+    <Compile Include="DependencyInjection\TaskRegistery.cs" />
+    <Compile Include="SEO\CanonicalHostNameAttribute.cs" />
+    <Compile Include="SEO\ThemeVariablesService.cs" />
+    <Compile Include="Setting\ArganmehrDependingSettingData.cs" />
+    <Compile Include="Setting\ArganmehrDependingSettingHelper.cs" />
+    <Compile Include="Theming\AdminThemedAttribute.cs" />
+    <Compile Include="Theming\DefaultThemeRegistry.cs" />
+    <Compile Include="Theming\InheritedVirtualThemeFile.cs" />
+    <Compile Include="Theming\IThemeContext.cs" />
+    <Compile Include="Theming\IThemeFileResolver.cs" />
+    <Compile Include="Theming\LocalizedDisplayMode.cs" />
+    <Compile Include="Theming\SmartStyleBundle.cs" />
+    <Compile Include="Theming\ThemeableRazorViewEngine.cs" />
+    <Compile Include="Theming\ThemeableVirtualPathProviderViewEngine.cs" />
+    <Compile Include="Theming\ThemeContext.cs" />
+    <Compile Include="Theming\ThemeHelper.cs" />
+    <Compile Include="Theming\ThemeHtmlExtensions.cs" />
+    <Compile Include="Theming\ThemeVarsRepository.cs" />
+    <Compile Include="Theming\ThemeVarsVirtualFile.cs" />
+    <Compile Include="Theming\ThemingVirtualPathProvider.cs" />
+    <Compile Include="Theming\TwoLevelViewLocationCache.cs" />
+    <Compile Include="Theming\WebViewPage.cs" />
+    <Compile Include="UI\Component.cs" />
+    <Compile Include="UI\ComponentBuilder.cs" />
+    <Compile Include="UI\ComponentFactory.cs" />
+    <Compile Include="UI\ComponentRenderer.cs" />
+    <Compile Include="UI\ComponentRendererUtils.cs" />
+    <Compile Include="UI\IContentContainer.cs" />
+    <Compile Include="UI\INavigatable.cs" />
+    <Compile Include="UI\IPageable.cs" />
+    <Compile Include="UI\IUiComponent.cs" />
+    <Compile Include="UI\NavigatableComponentBuilder.cs" />
+    <Compile Include="UI\NavigatableExtensions.cs" />
+    <Compile Include="UI\NavigationItemtWithContentBuilder.cs" />
+    <Compile Include="UI\NavigationItemWithContent.cs" />
+    <Compile Include="UI\PageAssetsBuilder.cs" />
+    <Compile Include="UI\PagedList.cs" />
+    <Compile Include="UI\Pager.cs" />
+    <Compile Include="UI\PagerBuilder.cs" />
+    <Compile Include="UI\PagerItem.cs" />
+    <Compile Include="UI\PagerRenderer.cs" />
+    <Compile Include="UI\RouteValueDictionaryExtensions.cs" />
+    <Compile Include="UI\ScaffoldExtensions.cs" />
+    <Compile Include="UI\Tab.cs" />
+    <Compile Include="UI\TabBuilder.cs" />
+    <Compile Include="UI\TabFactory.cs" />
+    <Compile Include="UI\TabStrip.cs" />
+    <Compile Include="UI\TabStripBuilder.cs" />
+    <Compile Include="UI\TabStripRenderer.cs" />
+    <Compile Include="UI\Window.cs" />
+    <Compile Include="UI\WindowBuilder.cs" />
+    <Compile Include="UI\WindowRenderer.cs" />
+    <Compile Include="ArganmehrVersion.cs" />
+    <Compile Include="Validators\CreditCardPropertyValidator.cs" />
+    <Compile Include="Validators\SmartBaseValidator.cs" />
+    <Compile Include="Validators\SmartValidatorFactory.cs" />
+    <Compile Include="Validators\ValidatorExtensions .cs" />
+    <Compile Include="ViewModel\LanguageVModel\LanguageResourceModel.cs" />
+    <Compile Include="WebHelper.cs" />
+    <Compile Include="WebWorkContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BundleTransformer.Configuration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoMapperProfiles\AutoMapperProfiles.csproj">
+      <Project>{76B32015-C693-454D-96E6-92D572A2BECA}</Project>
+      <Name>AutoMapperProfiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{795B21DF-4BE9-444D-BCC4-674144D560D2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{A5AD7839-9524-4896-9009-97F1C45F7578}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainClasses\DomainClasses.csproj">
+      <Project>{72B9849F-931A-40C0-B11E-44324CD46250}</Project>
+      <Name>DomainClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj">
+      <Project>{A3151FC4-6C88-4323-858A-9AA522D54BC2}</Project>
+      <Name>ServiceLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{51986c43-db68-4a80-ae14-4ffd7a9e91a4}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

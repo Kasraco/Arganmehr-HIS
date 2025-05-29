@@ -1,0 +1,180 @@
+﻿<error errorId="5aa07e1d-f4a6-4383-9a4d-d23f8cec870b" application="/LM/W3SVC/26/ROOT" host="DESKTOP-47FMJ16" type="System.InvalidOperationException" message="Page not found: /img/logo.png" source="Web" detail="System.InvalidOperationException: Page not found: /img/logo.png&#xD;&#xA;   at Web.StructureMapControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType) in d:\Project\Arganmehr\Projects\03\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 82&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at Web.StructureMapControllerFactory.CreateController(RequestContext requestContext, String controllerName) in d:\Project\Arganmehr\Projects\03\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 62&#xD;&#xA;   at MvcSiteMapProvider.DI.ControllerFactoryDecorator.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController&amp; controller, IControllerFactory&amp; factory)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="مدیر سیستم" time="2016-01-02T20:09:28.1031437Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:image/png,image/*;q=0.8,*/*;q=0.5&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.5&#xD;&#xA;HTTP_COOKIE:.ASPXANONYMOUS=xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0; glimpsePolicy=; __RequestVerificationToken=njwbowuKQiDah1mUw8TvhPt7WCyAsILZHHpfUiySohOrRuy-UgQf2VmipoHhP8oyp_-tZU4zNpNCPcI4edzrg5wdZ8KQ0u8oSgjUCwAyY-g1; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; wrawrsatrsrweasrdxsf=24ab775f136f428b9f59565a40d605eb=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/xIe+FSWSXBO9c9VsZvTGuUMyzKe2+oELxiWWYCfxdfOkHDsFfJbhZSRsTQ96E6f+76Z9ldBdxHw8EJlUAZKQ8mYhiM5rrkhGh7dM24QJIpg==&amp;9db43222711548678fba5ccca7ac8bad=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU9Sh8QpSb2LpJ/AzGuL9QDYnbOzBUyAiX0Z6/CDeRsi88elWJ2kYKqbGkcJayPnctT5PUvjAMNs3mTg5lFE9Uvx6zVd/zz9TJ0NGd3K1zV1Qw==&amp;1a8e78d13d0d43f5b2643c31c65abf56=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/c/G6DXu8F4stXgqtGx1iFhOsGzc3yLQBro5hLj8R1AtiMLn9ppEwER+rwR6WK0XVpwnSaCWWLL+tw+suyhP602Q==&amp;0500a6aff592467789604dd5a2ce081b=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/yTJ0jnvNV3nowwCw8llUFor3K8Jt9KsZ1gYINuIRuuAjsvWFzc4Yjzjvh9lXAoIX0OH4oxRlI2xrI9M5NtPbpvvJjQcXtD8MY8yXU4YADNw==&amp;3fcd90fb31524e069f7e08f1781763fa=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU+dIDrrTGOJ60oL4dAfz5zvbJH7cpKQczdwcoDDfdVk8L4cdM0Tt39OoSV9FQE4pRrTVpzNrTvYYuU82ZXgqJ6em+7fbBRLo+2UHpDPC5FrhA==; wrawrsatrsrweasrdxsfw2ewasjret=; DotNetCms=Dq-CsXM7aMxL7ITIcteJcVnF1Ihe0w-dhBk4Vtb9g68ygUou9e9KaKKabMN2YOvppw9T42az6LHQ4Svtj7N754P0urRcSkY73cZuOG8OWD3KCr0khpCdZoXq6T1NEFrYR-8XkucxTc8yMN_HAZpfaYBY56UVcH2aKPZgTrr6fhT5BCzrW9QwfA9EN-_etO9YTk7AjUnD1W_TMMbQ5ZtnQQeNVGcMaAE_2h9SNM9tXApJmv2VyM0FwyigzLsH01K6dU18KCmOduHo9v8bacZdvx6UZ84xNu5J58BqesyPD72h1aRoHWvkPBY5r1BQmg5mtKOKLzyNNFr2vjp8tFbx-ijMLKHHlSKhYlsvGxEJRkCRV-uJoGkOJF-oYuqAtChoneuIEceAGMTZmW_DaHqlcTLOOdq_jUKcQlbydgD71BdNeHZdDc3dClfqsvODy8ei72pxC1WP6gfmc4iRF7oNUcNm2pTuIM5YZ2JlurxYcipq8QREDxPCPEoOo2QonboFvnvxS69xVUyVhsAb0zN7uM_4tL0AbLiy35FLDpbBaKGyokX29rdeINa_ktXtXBAhTVTXDqxtP5PhGJSkIO9wLtJiSyJNojx9yT-wi0XFNUvyJJ7csH7z2vMAxgGX08j5m5degZCJqAICFemySpXq6A&#xD;&#xA;HTTP_HOST:localhost:1094&#xD;&#xA;HTTP_REFERER:http://localhost:1094/Content/AdminTheme.css&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: image/png,image/*;q=0.8,*/*;q=0.5&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-US,en;q=0.5&#xD;&#xA;Cookie: .ASPXANONYMOUS=xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0; glimpsePolicy=; __RequestVerificationToken=njwbowuKQiDah1mUw8TvhPt7WCyAsILZHHpfUiySohOrRuy-UgQf2VmipoHhP8oyp_-tZU4zNpNCPcI4edzrg5wdZ8KQ0u8oSgjUCwAyY-g1; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; wrawrsatrsrweasrdxsf=24ab775f136f428b9f59565a40d605eb=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/xIe+FSWSXBO9c9VsZvTGuUMyzKe2+oELxiWWYCfxdfOkHDsFfJbhZSRsTQ96E6f+76Z9ldBdxHw8EJlUAZKQ8mYhiM5rrkhGh7dM24QJIpg==&amp;9db43222711548678fba5ccca7ac8bad=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU9Sh8QpSb2LpJ/AzGuL9QDYnbOzBUyAiX0Z6/CDeRsi88elWJ2kYKqbGkcJayPnctT5PUvjAMNs3mTg5lFE9Uvx6zVd/zz9TJ0NGd3K1zV1Qw==&amp;1a8e78d13d0d43f5b2643c31c65abf56=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/c/G6DXu8F4stXgqtGx1iFhOsGzc3yLQBro5hLj8R1AtiMLn9ppEwER+rwR6WK0XVpwnSaCWWLL+tw+suyhP602Q==&amp;0500a6aff592467789604dd5a2ce081b=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/yTJ0jnvNV3nowwCw8llUFor3K8Jt9KsZ1gYINuIRuuAjsvWFzc4Yjzjvh9lXAoIX0OH4oxRlI2xrI9M5NtPbpvvJjQcXtD8MY8yXU4YADNw==&amp;3fcd90fb31524e069f7e08f1781763fa=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU+dIDrrTGOJ60oL4dAfz5zvbJH7cpKQczdwcoDDfdVk8L4cdM0Tt39OoSV9FQE4pRrTVpzNrTvYYuU82ZXgqJ6em+7fbBRLo+2UHpDPC5FrhA==; wrawrsatrsrweasrdxsfw2ewasjret=; DotNetCms=Dq-CsXM7aMxL7ITIcteJcVnF1Ihe0w-dhBk4Vtb9g68ygUou9e9KaKKabMN2YOvppw9T42az6LHQ4Svtj7N754P0urRcSkY73cZuOG8OWD3KCr0khpCdZoXq6T1NEFrYR-8XkucxTc8yMN_HAZpfaYBY56UVcH2aKPZgTrr6fhT5BCzrW9QwfA9EN-_etO9YTk7AjUnD1W_TMMbQ5ZtnQQeNVGcMaAE_2h9SNM9tXApJmv2VyM0FwyigzLsH01K6dU18KCmOduHo9v8bacZdvx6UZ84xNu5J58BqesyPD72h1aRoHWvkPBY5r1BQmg5mtKOKLzyNNFr2vjp8tFbx-ijMLKHHlSKhYlsvGxEJRkCRV-uJoGkOJF-oYuqAtChoneuIEceAGMTZmW_DaHqlcTLOOdq_jUKcQlbydgD71BdNeHZdDc3dClfqsvODy8ei72pxC1WP6gfmc4iRF7oNUcNm2pTuIM5YZ2JlurxYcipq8QREDxPCPEoOo2QonboFvnvxS69xVUyVhsAb0zN7uM_4tL0AbLiy35FLDpbBaKGyokX29rdeINa_ktXtXBAhTVTXDqxtP5PhGJSkIO9wLtJiSyJNojx9yT-wi0XFNUvyJJ7csH7z2vMAxgGX08j5m5degZCJqAICFemySpXq6A&#xD;&#xA;Host: localhost:1094&#xD;&#xA;Referer: http://localhost:1094/Content/AdminTheme.css&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/26/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\03\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="26" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/26" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/img/logo.png" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\03\ArganmehrHIS\Web\img\logo.png" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="13848" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/img/logo.png" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1094" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/img/logo.png" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="image/png,image/*;q=0.8,*/*;q=0.5" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.5" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string=".ASPXANONYMOUS=xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0; glimpsePolicy=; __RequestVerificationToken=njwbowuKQiDah1mUw8TvhPt7WCyAsILZHHpfUiySohOrRuy-UgQf2VmipoHhP8oyp_-tZU4zNpNCPcI4edzrg5wdZ8KQ0u8oSgjUCwAyY-g1; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; wrawrsatrsrweasrdxsf=24ab775f136f428b9f59565a40d605eb=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/xIe+FSWSXBO9c9VsZvTGuUMyzKe2+oELxiWWYCfxdfOkHDsFfJbhZSRsTQ96E6f+76Z9ldBdxHw8EJlUAZKQ8mYhiM5rrkhGh7dM24QJIpg==&amp;9db43222711548678fba5ccca7ac8bad=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU9Sh8QpSb2LpJ/AzGuL9QDYnbOzBUyAiX0Z6/CDeRsi88elWJ2kYKqbGkcJayPnctT5PUvjAMNs3mTg5lFE9Uvx6zVd/zz9TJ0NGd3K1zV1Qw==&amp;1a8e78d13d0d43f5b2643c31c65abf56=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/c/G6DXu8F4stXgqtGx1iFhOsGzc3yLQBro5hLj8R1AtiMLn9ppEwER+rwR6WK0XVpwnSaCWWLL+tw+suyhP602Q==&amp;0500a6aff592467789604dd5a2ce081b=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/yTJ0jnvNV3nowwCw8llUFor3K8Jt9KsZ1gYINuIRuuAjsvWFzc4Yjzjvh9lXAoIX0OH4oxRlI2xrI9M5NtPbpvvJjQcXtD8MY8yXU4YADNw==&amp;3fcd90fb31524e069f7e08f1781763fa=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU+dIDrrTGOJ60oL4dAfz5zvbJH7cpKQczdwcoDDfdVk8L4cdM0Tt39OoSV9FQE4pRrTVpzNrTvYYuU82ZXgqJ6em+7fbBRLo+2UHpDPC5FrhA==; wrawrsatrsrweasrdxsfw2ewasjret=; DotNetCms=Dq-CsXM7aMxL7ITIcteJcVnF1Ihe0w-dhBk4Vtb9g68ygUou9e9KaKKabMN2YOvppw9T42az6LHQ4Svtj7N754P0urRcSkY73cZuOG8OWD3KCr0khpCdZoXq6T1NEFrYR-8XkucxTc8yMN_HAZpfaYBY56UVcH2aKPZgTrr6fhT5BCzrW9QwfA9EN-_etO9YTk7AjUnD1W_TMMbQ5ZtnQQeNVGcMaAE_2h9SNM9tXApJmv2VyM0FwyigzLsH01K6dU18KCmOduHo9v8bacZdvx6UZ84xNu5J58BqesyPD72h1aRoHWvkPBY5r1BQmg5mtKOKLzyNNFr2vjp8tFbx-ijMLKHHlSKhYlsvGxEJRkCRV-uJoGkOJF-oYuqAtChoneuIEceAGMTZmW_DaHqlcTLOOdq_jUKcQlbydgD71BdNeHZdDc3dClfqsvODy8ei72pxC1WP6gfmc4iRF7oNUcNm2pTuIM5YZ2JlurxYcipq8QREDxPCPEoOo2QonboFvnvxS69xVUyVhsAb0zN7uM_4tL0AbLiy35FLDpbBaKGyokX29rdeINa_ktXtXBAhTVTXDqxtP5PhGJSkIO9wLtJiSyJNojx9yT-wi0XFNUvyJJ7csH7z2vMAxgGX08j5m5degZCJqAICFemySpXq6A" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:1094" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:1094/Content/AdminTheme.css" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name=".ASPXANONYMOUS">
+      <value string="xAN046lG0QEkAAAAMWM2MjZjMzAtNWNkYS00MWQwLTg5YWItNzcyZWVmN2Q3ODUy0" />
+    </item>
+    <item name="glimpsePolicy">
+      <value string="" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="njwbowuKQiDah1mUw8TvhPt7WCyAsILZHHpfUiySohOrRuy-UgQf2VmipoHhP8oyp_-tZU4zNpNCPcI4edzrg5wdZ8KQ0u8oSgjUCwAyY-g1" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsf">
+      <value string="24ab775f136f428b9f59565a40d605eb=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/xIe+FSWSXBO9c9VsZvTGuUMyzKe2+oELxiWWYCfxdfOkHDsFfJbhZSRsTQ96E6f+76Z9ldBdxHw8EJlUAZKQ8mYhiM5rrkhGh7dM24QJIpg==&amp;9db43222711548678fba5ccca7ac8bad=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU9Sh8QpSb2LpJ/AzGuL9QDYnbOzBUyAiX0Z6/CDeRsi88elWJ2kYKqbGkcJayPnctT5PUvjAMNs3mTg5lFE9Uvx6zVd/zz9TJ0NGd3K1zV1Qw==&amp;1a8e78d13d0d43f5b2643c31c65abf56=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/c/G6DXu8F4stXgqtGx1iFhOsGzc3yLQBro5hLj8R1AtiMLn9ppEwER+rwR6WK0XVpwnSaCWWLL+tw+suyhP602Q==&amp;0500a6aff592467789604dd5a2ce081b=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/yTJ0jnvNV3nowwCw8llUFor3K8Jt9KsZ1gYINuIRuuAjsvWFzc4Yjzjvh9lXAoIX0OH4oxRlI2xrI9M5NtPbpvvJjQcXtD8MY8yXU4YADNw==&amp;3fcd90fb31524e069f7e08f1781763fa=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU+dIDrrTGOJ60oL4dAfz5zvbJH7cpKQczdwcoDDfdVk8L4cdM0Tt39OoSV9FQE4pRrTVpzNrTvYYuU82ZXgqJ6em+7fbBRLo+2UHpDPC5FrhA==" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsfw2ewasjret">
+      <value string="" />
+    </item>
+    <item name="DotNetCms">
+      <value string="Dq-CsXM7aMxL7ITIcteJcVnF1Ihe0w-dhBk4Vtb9g68ygUou9e9KaKKabMN2YOvppw9T42az6LHQ4Svtj7N754P0urRcSkY73cZuOG8OWD3KCr0khpCdZoXq6T1NEFrYR-8XkucxTc8yMN_HAZpfaYBY56UVcH2aKPZgTrr6fhT5BCzrW9QwfA9EN-_etO9YTk7AjUnD1W_TMMbQ5ZtnQQeNVGcMaAE_2h9SNM9tXApJmv2VyM0FwyigzLsH01K6dU18KCmOduHo9v8bacZdvx6UZ84xNu5J58BqesyPD72h1aRoHWvkPBY5r1BQmg5mtKOKLzyNNFr2vjp8tFbx-ijMLKHHlSKhYlsvGxEJRkCRV-uJoGkOJF-oYuqAtChoneuIEceAGMTZmW_DaHqlcTLOOdq_jUKcQlbydgD71BdNeHZdDc3dClfqsvODy8ei72pxC1WP6gfmc4iRF7oNUcNm2pTuIM5YZ2JlurxYcipq8QREDxPCPEoOo2QonboFvnvxS69xVUyVhsAb0zN7uM_4tL0AbLiy35FLDpbBaKGyokX29rdeINa_ktXtXBAhTVTXDqxtP5PhGJSkIO9wLtJiSyJNojx9yT-wi0XFNUvyJJ7csH7z2vMAxgGX08j5m5degZCJqAICFemySpXq6A" />
+    </item>
+  </cookies>
+</error>

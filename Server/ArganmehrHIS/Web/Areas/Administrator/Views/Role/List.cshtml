@@ -1,0 +1,41 @@
+﻿@using Web.Extentions
+@{
+    ViewBag.Title = "لیست گروه کاربری های کاربری";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-2">
+                @Html.ActionLink("درج گروه کاربری جدید", MVC.Administrator.Role.ActionNames.Create, MVC.Administrator.Role.Name, new { area = MVC.Administrator.Name }, new { @class = "btn btn-sm btn-info" })
+            </div>
+            <div class="col-md-6">
+                @using (Ajax.BeginForm(MVC.Administrator.Role.ActionNames.ListAjax, MVC.Administrator.Role.Name, new { area = MVC.Administrator.Name }, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "roleList", OnComplete = "onComplete", OnSuccess = "AjaxForm.ResetButton('searchRoleButton')" }, new { @class = "form-horizontal", autocomplete = "off", id = "roleSearchForm" }))
+                {
+                    <div class="input-group" dir="ltr">
+                        <span class="input-group-btn">
+                            <button type="button" id="searchRoleButton" onclick="AjaxForm.CustomSubmit(this, 'roleSearchForm')" autocomplete="off" data-loading-text="جستجو" class="btn btn-info btn-sm">
+                                جستجو
+                            </button>
+                        </span>
+
+                        <input dir="rtl" type="text" name="term" class="form-control"
+                               placeholder="کلمه جستجو">
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default" id="roleList">
+    @{Html.SecureRenderAction(MVC.Administrator.Role.ActionNames.ListAjax, MVC.Administrator.Role.Name);}
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(function () {
+            warningBeforeLoad();
+        })
+    </script>
+}

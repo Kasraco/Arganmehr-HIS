@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Factory="CentralAdminWebService.IOC.StructureMapServiceHostFactory" 
+                                           Service="CentralAdminWebService.wcf.InstitutionService"
+                                           CodeBehind="InstitutionService.svc.cs" %>

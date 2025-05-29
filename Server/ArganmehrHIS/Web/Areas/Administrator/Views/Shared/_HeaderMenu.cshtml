@@ -1,0 +1,40 @@
+﻿<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+
+    @Html.Partial(MVC.Administrator.Shared.Views._Heade_Right_SideBar)
+    @Html.Partial(MVC.Administrator.Shared.Views._Heade_Left_SideBar)
+
+    <div class="navbar-header ">
+        <a class="navbar-brand" href="#">ارگان</a>
+    </div>
+
+    @using (Html.BeginForm(MVC.Account.ActionNames.LogOff, MVC.Account.Name, new { area = "" }, FormMethod.Post, new { id = "frmLogOut" }))
+    {
+        @Html.AntiForgeryToken()
+
+
+
+    }
+    <ul class="nav navbar-nav pull-right toolbar">
+        <li class="dropdown">
+            @Html.Partial(MVC.Administrator.Shared.Views._SettingMenu)
+        </li>
+    </ul>
+
+    <ul class="nav navbar-nav pull-left toolbar">
+        <li class="dropdown">
+            @Html.Partial(MVC.Administrator.Shared.Views._Profile)
+        </li>
+        <li class="dropdown">
+            @Html.Partial(MVC.Administrator.Shared.Views._Message)
+           
+        </li>
+        <li class="dropdown">            
+            @Html.Partial(MVC.Administrator.Shared.Views._Notifications)
+        </li>
+        <li>
+            <a href="#" id="headerbardropdown"><span><i class="fa fa-level-down"></i></span></a>
+        </li>
+
+    </ul>
+</header>
+

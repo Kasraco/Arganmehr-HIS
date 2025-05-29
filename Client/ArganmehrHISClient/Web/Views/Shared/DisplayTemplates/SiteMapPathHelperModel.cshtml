@@ -1,0 +1,21 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapPathHelperModel
+@using System.Web.Mvc.Html
+@using System.Linq
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ol class="breadcrumb">
+    @foreach (var node in Model)
+    {
+
+        if (node != Model.Last())
+        {
+            <li class="active">@Html.DisplayFor(m => node)</li>
+        }
+        else
+        {
+            <li>
+                @Html.DisplayFor(m => node)
+            </li>
+        }
+    }
+</ol>

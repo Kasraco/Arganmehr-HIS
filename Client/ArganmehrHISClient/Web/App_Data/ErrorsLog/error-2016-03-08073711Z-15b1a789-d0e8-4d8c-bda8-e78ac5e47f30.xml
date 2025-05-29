@@ -1,0 +1,192 @@
+﻿<error errorId="15b1a789-d0e8-4d8c-bda8-e78ac5e47f30" application="/LM/W3SVC/26/ROOT" host="DESKTOP-47FMJ16" type="System.InvalidOperationException" message="Page not found: /Content/normalize.css" source="Web" detail="System.InvalidOperationException: Page not found: /Content/normalize.css&#xD;&#xA;   at Web.StructureMapControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType) in d:\Project\Arganmehr\Projects\Server\07\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 82&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at Web.StructureMapControllerFactory.CreateController(RequestContext requestContext, String controllerName) in d:\Project\Arganmehr\Projects\Server\07\ArganmehrHIS\Web\App_Start\StructureMapControllerFactory.cs:line 62&#xD;&#xA;   at MvcSiteMapProvider.DI.ControllerFactoryDecorator.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController&amp; controller, IControllerFactory&amp; factory)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="مدیر سیستم" time="2016-03-08T07:37:11.3655257Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/css,*/*;q=0.1&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;HTTP_COOKIE:glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22; __atuvc=12%7C2; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=Fx_HNCDSv1PXVR6JgzqEdNdQw9Igd42DGZVEDW3wAXlqCZHsl5XdnIIatdwcTujVg3uuRgiLVHN8WzFrmex2OO6z7p7CCE6tk5QqTcw_tXo1; DotNetCms=L_b4xVPvXkzGtb6hjcnRLrS6AqKcWApdzzAisF0XVgDdjRMkXDf9KlICKAMNSvoJT8Sp0IdrbyRRpraEbQ9W2bQnRy9LAdbJLgnBkxiRsiRPwt1HL7EZARfHK5zI4a6QKoDpFXGQPrIbHrH1ND_l8xhLSQRUyDbh52Tl_14A_kgWUaWmuppcE_Vfr_JkSanaKjm5lBB7m9qQEegHUrD644oN1-LGVR0TS8GTpT77FjTRGosFkTLsJvOdiJLOS1lea3IDcoWvJsoM81s1IQ6Q9MImFFyFuRnqbTwENN0Q58EwcoyaXqbC0TeFuUar3XgajRUmdIPu2M35JaYp5z4VE68KrzE9UmquWYfYidfwB5IBFLT7WVeTDqw8aUJaFeqBFmW611Wld69yst8MnQSfr6AP900ZC3Pm5ukfQ8JjdMAGPAujFOXXZKlYFd_cRbTLQa6uxWpWS24ac9ENFR8QRO2A_dBP-QThwGFNHm8tqUo4vb-AD8zbY0qxmDjnXKqqlvGoksEmOqc-pKj262ysZG5tjH-hFU8KTRcNZZTy8J6RUJu4Hqn9jtkQG9izzHSJycggL-gcJ1rG_gRaLUPedeeKPdPkbTJV2EVw7UhlYyI8Aoxj6wXp1sS5ImIKsn9e; admin_leftbar_collapse=; admin_rightbar_show=; wrawrsatrsrweasrdxsf=c211c978a6fe4155b1c80d0d71817a92=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/cJYTwy1MKlnlvEgArJ2KVNuG/uOgx49n9VsRWriFyRW2B64a29G2f97fstuHOqmiQrr3FGCMZLvGRqYXMeML9AA==; wrawrsatrsrweasrdxsfw2ewasjret=&#xD;&#xA;HTTP_HOST:localhost:1094&#xD;&#xA;HTTP_REFERER:http://localhost:1094/administrator&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/css,*/*;q=0.1&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: fa,en-US;q=0.7,en;q=0.3&#xD;&#xA;Cookie: glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22; __atuvc=12%7C2; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=Fx_HNCDSv1PXVR6JgzqEdNdQw9Igd42DGZVEDW3wAXlqCZHsl5XdnIIatdwcTujVg3uuRgiLVHN8WzFrmex2OO6z7p7CCE6tk5QqTcw_tXo1; DotNetCms=L_b4xVPvXkzGtb6hjcnRLrS6AqKcWApdzzAisF0XVgDdjRMkXDf9KlICKAMNSvoJT8Sp0IdrbyRRpraEbQ9W2bQnRy9LAdbJLgnBkxiRsiRPwt1HL7EZARfHK5zI4a6QKoDpFXGQPrIbHrH1ND_l8xhLSQRUyDbh52Tl_14A_kgWUaWmuppcE_Vfr_JkSanaKjm5lBB7m9qQEegHUrD644oN1-LGVR0TS8GTpT77FjTRGosFkTLsJvOdiJLOS1lea3IDcoWvJsoM81s1IQ6Q9MImFFyFuRnqbTwENN0Q58EwcoyaXqbC0TeFuUar3XgajRUmdIPu2M35JaYp5z4VE68KrzE9UmquWYfYidfwB5IBFLT7WVeTDqw8aUJaFeqBFmW611Wld69yst8MnQSfr6AP900ZC3Pm5ukfQ8JjdMAGPAujFOXXZKlYFd_cRbTLQa6uxWpWS24ac9ENFR8QRO2A_dBP-QThwGFNHm8tqUo4vb-AD8zbY0qxmDjnXKqqlvGoksEmOqc-pKj262ysZG5tjH-hFU8KTRcNZZTy8J6RUJu4Hqn9jtkQG9izzHSJycggL-gcJ1rG_gRaLUPedeeKPdPkbTJV2EVw7UhlYyI8Aoxj6wXp1sS5ImIKsn9e; admin_leftbar_collapse=; admin_rightbar_show=; wrawrsatrsrweasrdxsf=c211c978a6fe4155b1c80d0d71817a92=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/cJYTwy1MKlnlvEgArJ2KVNuG/uOgx49n9VsRWriFyRW2B64a29G2f97fstuHOqmiQrr3FGCMZLvGRqYXMeML9AA==; wrawrsatrsrweasrdxsfw2ewasjret=&#xD;&#xA;Host: localhost:1094&#xD;&#xA;Referer: http://localhost:1094/administrator&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/26/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Project\Arganmehr\Projects\Server\07\ArganmehrHIS\Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="مدیر سیستم" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="26" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/26" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/Content/normalize.css" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Project\Arganmehr\Projects\Server\07\ArganmehrHIS\Web\Content\normalize.css" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="12794" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/Content/normalize.css" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1094" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.0" />
+    </item>
+    <item name="URL">
+      <value string="/Content/normalize.css" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/css,*/*;q=0.1" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="fa,en-US;q=0.7,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="glimpsePolicy=; MyLanguageCookieName=en-US; smartstore.customer=a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22; __atuvc=12%7C2; __ControllerTempData=AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL; __RequestVerificationToken=Fx_HNCDSv1PXVR6JgzqEdNdQw9Igd42DGZVEDW3wAXlqCZHsl5XdnIIatdwcTujVg3uuRgiLVHN8WzFrmex2OO6z7p7CCE6tk5QqTcw_tXo1; DotNetCms=L_b4xVPvXkzGtb6hjcnRLrS6AqKcWApdzzAisF0XVgDdjRMkXDf9KlICKAMNSvoJT8Sp0IdrbyRRpraEbQ9W2bQnRy9LAdbJLgnBkxiRsiRPwt1HL7EZARfHK5zI4a6QKoDpFXGQPrIbHrH1ND_l8xhLSQRUyDbh52Tl_14A_kgWUaWmuppcE_Vfr_JkSanaKjm5lBB7m9qQEegHUrD644oN1-LGVR0TS8GTpT77FjTRGosFkTLsJvOdiJLOS1lea3IDcoWvJsoM81s1IQ6Q9MImFFyFuRnqbTwENN0Q58EwcoyaXqbC0TeFuUar3XgajRUmdIPu2M35JaYp5z4VE68KrzE9UmquWYfYidfwB5IBFLT7WVeTDqw8aUJaFeqBFmW611Wld69yst8MnQSfr6AP900ZC3Pm5ukfQ8JjdMAGPAujFOXXZKlYFd_cRbTLQa6uxWpWS24ac9ENFR8QRO2A_dBP-QThwGFNHm8tqUo4vb-AD8zbY0qxmDjnXKqqlvGoksEmOqc-pKj262ysZG5tjH-hFU8KTRcNZZTy8J6RUJu4Hqn9jtkQG9izzHSJycggL-gcJ1rG_gRaLUPedeeKPdPkbTJV2EVw7UhlYyI8Aoxj6wXp1sS5ImIKsn9e; admin_leftbar_collapse=; admin_rightbar_show=; wrawrsatrsrweasrdxsf=c211c978a6fe4155b1c80d0d71817a92=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/cJYTwy1MKlnlvEgArJ2KVNuG/uOgx49n9VsRWriFyRW2B64a29G2f97fstuHOqmiQrr3FGCMZLvGRqYXMeML9AA==; wrawrsatrsrweasrdxsfw2ewasjret=" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:1094" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:1094/administrator" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="glimpsePolicy">
+      <value string="" />
+    </item>
+    <item name="MyLanguageCookieName">
+      <value string="en-US" />
+    </item>
+    <item name="smartstore.customer">
+      <value string="a592d3ba-ab2f-4c1d-8cdd-3e4a6a08ca22" />
+    </item>
+    <item name="__atuvc">
+      <value string="12%7C2" />
+    </item>
+    <item name="__ControllerTempData">
+      <value string="AAEAAAD/////AQAAAAAAAAAEAQAAAOIBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuRGljdGlvbmFyeWAyW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uT2JqZWN0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAHVmVyc2lvbghDb21wYXJlcghIYXNoU2l6ZQADAAgWU3lzdGVtLk9yZGluYWxDb21wYXJlcggAAAAACQIAAAAAAAAABAIAAAAWU3lzdGVtLk9yZGluYWxDb21wYXJlcgEAAAALX2lnbm9yZUNhc2UAAQEL" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="Fx_HNCDSv1PXVR6JgzqEdNdQw9Igd42DGZVEDW3wAXlqCZHsl5XdnIIatdwcTujVg3uuRgiLVHN8WzFrmex2OO6z7p7CCE6tk5QqTcw_tXo1" />
+    </item>
+    <item name="DotNetCms">
+      <value string="L_b4xVPvXkzGtb6hjcnRLrS6AqKcWApdzzAisF0XVgDdjRMkXDf9KlICKAMNSvoJT8Sp0IdrbyRRpraEbQ9W2bQnRy9LAdbJLgnBkxiRsiRPwt1HL7EZARfHK5zI4a6QKoDpFXGQPrIbHrH1ND_l8xhLSQRUyDbh52Tl_14A_kgWUaWmuppcE_Vfr_JkSanaKjm5lBB7m9qQEegHUrD644oN1-LGVR0TS8GTpT77FjTRGosFkTLsJvOdiJLOS1lea3IDcoWvJsoM81s1IQ6Q9MImFFyFuRnqbTwENN0Q58EwcoyaXqbC0TeFuUar3XgajRUmdIPu2M35JaYp5z4VE68KrzE9UmquWYfYidfwB5IBFLT7WVeTDqw8aUJaFeqBFmW611Wld69yst8MnQSfr6AP900ZC3Pm5ukfQ8JjdMAGPAujFOXXZKlYFd_cRbTLQa6uxWpWS24ac9ENFR8QRO2A_dBP-QThwGFNHm8tqUo4vb-AD8zbY0qxmDjnXKqqlvGoksEmOqc-pKj262ysZG5tjH-hFU8KTRcNZZTy8J6RUJu4Hqn9jtkQG9izzHSJycggL-gcJ1rG_gRaLUPedeeKPdPkbTJV2EVw7UhlYyI8Aoxj6wXp1sS5ImIKsn9e" />
+    </item>
+    <item name="admin_leftbar_collapse">
+      <value string="" />
+    </item>
+    <item name="admin_rightbar_show">
+      <value string="" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsf">
+      <value string="c211c978a6fe4155b1c80d0d71817a92=WUBEw87awMZXw8L2Ini3Jp4SdZu4Uhl20IeeEgfBvyqgbfTjw0LTSLwcX4H4vj9Kb/xiax3V0bK+k66TJzCCj24n5LGa44Skjrt6DTNBxU/YzLXgjZCtqrc1RszYTT/cJYTwy1MKlnlvEgArJ2KVNuG/uOgx49n9VsRWriFyRW2B64a29G2f97fstuHOqmiQrr3FGCMZLvGRqYXMeML9AA==" />
+    </item>
+    <item name="wrawrsatrsrweasrdxsfw2ewasjret">
+      <value string="" />
+    </item>
+  </cookies>
+</error>

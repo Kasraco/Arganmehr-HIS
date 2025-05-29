@@ -1,0 +1,46 @@
+﻿@model IList<ViewModel.AdminArea.Arganmehr.LanguageModel>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Header</h4>
+        <div class="options">
+            <a class="panel-collapse" href="#">
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="panel-body">
+
+        <div id="toolbar">
+            @Ajax.ActionLink(T("Arganmehr.Componnent.Create"), MVC.Administrator.Language.ActionNames.AddLanguage, MVC.Administrator.Language.Name, 
+                             new AjaxOptions {  HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "logOnModal", 
+                                                LoadingElementDuration = 300, LoadingElementId = "loadingMessage", OnSuccess = "LogOnForm.onSuccess" },
+                                      new { @class = "btn btn-success" })
+         
+        </div>
+        <table class="table table-bordered table-hover table-vertical"   >
+            <thead>
+                <tr>
+                    <th>@T("Admin.Configuration.Languages.Fields.Id").Text</th>
+                    <th>@T("Admin.Configuration.Languages.Fields.Name").Text</th>
+                    <th>@T("Admin.Configuration.Languages.Fields.LanguageCulture").Text</th>
+                    <th>@T("Admin.Configuration.Languages.Fields.UniqueSeoCode").Text</th>
+                    <th>@T("Admin.Configuration.Languages.Fields.Published").Text</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                @foreach(var lm in Model)
+                {
+                    <tr>
+                        <td>@lm.Id</td>
+                        <td>@lm.LanguageName</td>
+                        <td>@lm.LanguageCulture</td>
+                        <td>@lm.UniqueSeoCode</td>
+                        <td>@lm.Published</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
