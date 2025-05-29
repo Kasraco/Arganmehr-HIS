@@ -1,8 +1,3 @@
-<style>
-*{
-direction:rtl;
-}
-</style>
 # Arganmehr Hospital Information System (HIS)
 
 ## Overview
